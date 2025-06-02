@@ -1,17 +1,14 @@
 # DORA Regulation Assistant Chatbot
-
 A Retrieval-Augmented Generation (RAG) chatbot for answering questions about DORA (Digital Operational Resilience Act) regulations. Uses multiple retrieval methods and Azure OpenAI for intelligent responses.
 
 ## What This Chatbot Does
-
 - Answers questions about DORA regulations using legal documents
 - Provides source citations for all answers
-- Uses advanced retrieval methods (Dense, Sparse, Hybrid,HyDE)
+- Uses advanced retrieval methods (Dense, Sparse, Hybrid, HyDE)
 - Interactive web interface with chat functionality
 - Multiple configuration options for different retrieval strategies
 
 ## Requirements
-
 ### Paid Services Required
 - **Azure OpenAI API** - You need a paid Azure account with OpenAI access
 - Get your API keys from Azure Portal
@@ -21,7 +18,6 @@ A Retrieval-Augmented Generation (RAG) chatbot for answering questions about DOR
 - Docker
 
 ## Installation
-
 ### 1. Install Python Dependencies
 ```bash
 pip install -r requirements.txt
@@ -47,13 +43,12 @@ GENERATOR_DEPLOYMENT_NAME=your_gpt_deployment_name
 docker-compose up -d
 ```
 
-Option 2: Basic Docker Run
-
+**Option 2: Basic Docker Run**
 ```bash
 docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
 ```
 
-Option 3: Docker Run with Persistent Storage
+**Option 3: Docker Run with Persistent Storage**
 
 **Windows**
 ```bash
@@ -70,10 +65,9 @@ docker run -d -p 6333:6333 -p 6334:6334 -v $(pwd)/qdrant_storage:/qdrant/storage
 docker start qdrant
 ```
 
-Verify Qdrant is Running:
-
-Dashboard: http://localhost:6333/dashboard#/collections  
-Health check: http://localhost:6333/health
+**Verify Qdrant is Running:**
+- Dashboard: http://localhost:6333/dashboard#/collections  
+- Health check: http://localhost:6333/health
 
 ### 5. Load Embeddings to Qdrant
 ```bash
@@ -85,11 +79,9 @@ python qdrant.py
 ```bash
 streamlit run app.py
 ```
-
 Open your browser and go to: `http://localhost:8501`
 
 ## How to Use
-
 1. **Select Retriever Type**: Choose Dense, Sparse, Hybrid, or HyDE
 2. **Set K Value**: Number of documents to retrieve (recommended: 10-15)
 3. **Configure Options**: Enable/disable filtering and source display
@@ -97,13 +89,14 @@ Open your browser and go to: `http://localhost:8501`
 5. **View Sources**: Click source buttons to see retrieved documents
 
 ## Configuration Options
-
 - **Dense Retriever**: Uses vector similarity search
 - **Sparse Retriever**: Uses keyword-based BM25 search  
 - **Hybrid Retriever**: Combines dense and sparse methods
 - **HyDE Retriever**: Enhanced queries with hypothetical documents
 - **Show Chunks**: Display source documents used
-and many more 
+- And many more configuration options available
+
+## Troubleshooting
 
 **Azure API errors:**
 - Check your API keys in `.env.local`
@@ -120,7 +113,6 @@ docker-compose restart
 ```
 
 ## File Structure
-
 ```
 DORA_CHATBOT/
 ├── app.py                    # Main chatbot interface
@@ -133,7 +125,6 @@ DORA_CHATBOT/
 ```
 
 ## Cost Information
-
 This chatbot uses **Azure OpenAI API** which is a **paid service**:
 - Charges per API call/token
 - Embedding generation costs
