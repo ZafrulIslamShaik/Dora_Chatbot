@@ -28,15 +28,6 @@ pip install -r requirements.txt
 ```
 
 ### 2. Install Docker
-**Ubuntu/Linux:**
-```bash
-sudo apt update
-sudo apt install docker.io docker-compose-plugin
-sudo systemctl start docker
-sudo systemctl enable docker
-```
-
-**Windows/Mac:**
 - Download Docker Desktop from https://docker.com
 - Install and start Docker Desktop
 
@@ -49,13 +40,40 @@ AZURE_OPENAI_API_KEY=your_api_key_here
 AZURE_OPENAI_KEY=your_api_key_here
 AZURE_OPENAI_API_VERSION=2023-05-15
 GENERATOR_DEPLOYMENT_NAME=your_gpt_deployment_name
-DEPLOYMENT_NAME=gpt-4
 ```
 
 ### 4. Start Qdrant Vector Database
 ```bash
 docker-compose up -d
 ```
+
+Option 2: Basic Docker Run
+
+```bash
+docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+```
+
+Option 3: Docker Run with Persistent Storage
+
+**Windows**
+```bash
+docker run -d -p 6333:6333 -p 6334:6334 -v %cd%\qdrant_storage:/qdrant/storage --name qdrant qdrant/qdrant
+```
+
+**Linux/Mac**  
+```bash
+docker run -d -p 6333:6333 -p 6334:6334 -v $(pwd)/qdrant_storage:/qdrant/storage --name qdrant qdrant/qdrant
+```
+
+**Start Qdrant later**
+```bash
+docker start qdrant
+```
+
+Verify Qdrant is Running:
+
+Dashboard: http://localhost:6333/dashboard#/collections  
+Health check: http://localhost:6333/health
 
 ### 5. Load Embeddings to Qdrant
 ```bash
@@ -84,16 +102,8 @@ Open your browser and go to: `http://localhost:8501`
 - **Sparse Retriever**: Uses keyword-based BM25 search  
 - **Hybrid Retriever**: Combines dense and sparse methods
 - **HyDE Retriever**: Enhanced queries with hypothetical documents
-- **LLM Filtering**: Filters irrelevant documents
 - **Show Chunks**: Display source documents used
-
-## Troubleshooting
-
-**Qdrant not starting:**
-```bash
-docker-compose down
-docker-compose up -d
-```
+and many more 
 
 **Azure API errors:**
 - Check your API keys in `.env.local`
@@ -116,9 +126,9 @@ DORA_CHATBOT/
 ├── app.py                    # Main chatbot interface
 ├── requirements.txt          # Python dependencies  
 ├── docker-compose.yml        # Qdrant database setup
-├── .env.local               # Your API keys (create this)
-├── qdrant.py                # Load embeddings to database
-├── config.py                # Configuration settings
+├── .env.local                # Your API keys (create this)
+├── qdrant.py                 # Load embeddings to database
+├── config.py                 # Configuration settings
 └── [other retrieval and processing files]
 ```
 
@@ -128,13 +138,3 @@ This chatbot uses **Azure OpenAI API** which is a **paid service**:
 - Charges per API call/token
 - Embedding generation costs
 - Chat completion costs
-
-
-## Support
-
-Make sure you have:
-- ✅ Valid Azure OpenAI subscription
-- ✅ Docker running
-- ✅ All dependencies installed
-- ✅ Correct API keys in `.env.local`
-- ✅ Qdrant database loaded with embeddings
