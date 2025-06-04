@@ -1,0 +1,502 @@
+[
+    {
+        "context": [
+            "1.   Where an institution, financial holding company, mixed financial holding company or a mixed-activity holding company controls one or more subsidiaries which are insurance companies or other undertakings providing investment services which are subject to authorisation, the competent authorities and the authorities entrusted with the public task of supervising insurance undertakings or those other undertakings providing investment services shall cooperate closely. Without prejudice to their respective responsibilities, those authorities shall provide one another with any information likely to simplify their task and to allow supervision of the activity and overall financial situation of the undertakings they supervise. 2.   Information received, within the framework of supervision on a consolidated basis, and in particular any exchange of information between competent authorities which is provided for in this Directive, shall be subject to professional secrecy requirements at least equivalent to those referred to in Article 53(1) of this Directive for credit institutions or under Directive 2004/39/EC for investment firms. 3.   The competent authorities responsible for supervision on a consolidated basis shall establish lists of the financial holding companies or mixed financial holding companies referred to in Article 11 of Regulation (EU) No 575/2013. Those lists shall be communicated to the competent authorities of the other Member States, to EBA and to the Commission."
+        ],
+        "question": "What are the key provisions in the given context that detail how competent authorities should cooperate closely when supervising insurance or investment services provided by financial institutions?",
+        "chunk_index": 0,
+        "question_id": "Q001",
+        "chunk_number": 1101,
+        "parent_id": "a332b7c4-d34f-4de3-8815-5185ce257e4b"
+    },
+    {
+        "context": [
+            "1.   The Authority shall be represented by a Chairperson, who shall be a full-time independent professional. The Chairperson shall be responsible for preparing the work of the Board of Supervisors and shall chair the meetings of the Board of Supervisors and the Management Board. 2.   The Chairperson shall be appointed by the Board of Supervisors on the basis of merit, skills, knowledge of financial market participants and markets, and of experience relevant to financial supervision and regulation, following an open selection procedure. Before taking up his duties, and up to 1 month after the selection by the Board of Supervisors, the European Parliament may, after having heard the candidate selected by the Board of Supervisors, object to the designation of the selected person. The Board of Supervisors shall also elect, from among its members, an alternate who shall carry out the functions of the Chairperson in his absence. That alternate shall not be elected from among the members of the Management Board. 3.   The Chairperson’s term of office shall be 5 years and may be extended once. 4.   In the course of the 9 months preceding the end of the five-year term of office of the Chairperson, the Board of Supervisors shall evaluate: (a) the results achieved in the first term of office and the way they were achieved; (b) the Authority’s duties and requirements in the coming years. The Board of Supervisors, taking into account the evaluation may extend the term of office of the Chairperson once subject to confirmation by the European Parliament. 5.   The Chairperson may be removed from office only by the European Parliament following a decision of the Board of Supervisors. The Chairperson shall not prevent the Board of Supervisors from discussing matters relating to the Chairperson, in particular the need for his removal, and shall not be involved in deliberations concerning such a matter."
+        ],
+        "question": "What does the text mention about the responsibilities of a Chairperson in relation to preparing the work of the Board of Supervisors and chairing meetings?",
+        "chunk_index": 1,
+        "question_id": "Q002",
+        "chunk_number": 4663,
+        "parent_id": "d3eab0e8-6a0b-43f7-a89e-c27b779a797a"
+    },
+    {
+        "context": [
+            "1.   Within the limits of its mandate, the ESRB shall be responsible for the macroprudential oversight of the Union’s securitisation market. 2.   In order to contribute to the prevention or mitigation of systemic risks to financial stability in the Union that arise from developments within the financial system and taking into account macroeconomic developments, so as to avoid periods of widespread financial distress, the ESRB shall continuously monitor developments in the securitisation markets. Where the ESRB considers it necessary, or at least every 3 years, in order to highlight financial stability risks, the ESRB shall, in collaboration with the EBA, publish a report on the financial stability implications of the securitisation market. If material risks are observed, the ESRB shall provide warnings and, where appropriate, issue recommendations for remedial action in response to those risks pursuant to Article 16 of Regulation (EU) No 1092/2010, including on the appropriateness of modifying the risk-retention levels, or the taking of other macroprudential measures, to the Commission, the ESAs and to the Member States. The Commission, the ESAs and the Member States shall, in accordance with Article 17 of Regulation (EU) No 1092/2010, communicate to the ESRB, the European Parliament and the Council the actions undertaken in response to the recommendation and shall provide adequate justification for any inaction within three months of the date of transmission of the recommendation to the addressees."
+        ],
+        "question": "In the context provided, what does the European Securities and Investments Board (ESRB) have a responsibility towards the securitisation market within its mandate?",
+        "chunk_index": 2,
+        "question_id": "Q003",
+        "chunk_number": 6257,
+        "parent_id": "3ea6c031-0aae-49a3-a296-22275bfacc91"
+    },
+    {
+        "context": [
+            "1.   The power to adopt delegated acts is conferred on the Commission subject to the conditions laid down in this Article. 2.   The power to adopt delegated acts referred to in Article 1(2), Article 3(13) and Article 46(2) shall be conferred on the Commission for an indeterminate period of time from the date referred to in Article 54. 3.   The delegation of power referred to in Article 1(2), Article 3(13) and Article 46(2) may be revoked at any time by the European Parliament or by the Council. A decision to revoke shall put an end to the delegation of the power specified in that decision. It shall take effect the day following the publication of that decision in the  Official Journal of the European Union  or at a later date specified therein. It shall not affect the validity of any delegated acts already in force. 4.   As soon as it adopts a delegated act, the Commission shall notify it simultaneously to the European Parliament and to the Council. 5.   A delegated act adopted pursuant to Article 1(2), Article 3(13) or Article 46(2) shall enter into force only if no objection has been expressed either by the European Parliament or the Council within a period of two months of notification of that act to the European Parliament and the Council or if, before the expiry of that period, the European Parliament and the Council have both informed the Commission that they will not object. That period shall be extended by two months at the initiative of the European Parliament or the Council."
+        ],
+        "question": "\"What are the conditions under which delegated power can be revoked by the European Parliament or the Council?\"",
+        "chunk_index": 3,
+        "question_id": "Q004",
+        "chunk_number": 517,
+        "parent_id": "688efc42-d3d4-4066-aabc-a00b328bd916"
+    },
+    {
+        "context": [
+            "If the sum of an institution's overall net foreign-exchange position and its net gold position, calculated in accordance with the procedure set out in Article 352, including for any foreign exchange and gold positions for which own funds requirements are calculated using an internal model, exceeds 2 % of its total own funds, the institution shall calculate an own funds requirement for foreign exchange risk. The own funds requirement for foreign exchange risk shall be the sum of its overall net foreign-exchange position and its net gold position in the reporting currency, multiplied by 8 %."
+        ],
+        "question": "In accordance with Article 352, what are the conditions that an institution must meet for its foreign exchange risk requirements?",
+        "chunk_index": 4,
+        "question_id": "Q005",
+        "chunk_number": 2090,
+        "parent_id": "8be245a3-513f-4e35-9d7e-916ca7ef7215"
+    },
+    {
+        "context": [
+            "1.   Member States shall designate competent authorities that carry out the functions and duties provided for in this Directive and in Regulation (EU) No 575/2013. They shall inform the Commission and EBA thereof, indicating any division of functions and duties. 2.   Member States shall ensure that the competent authorities monitor the activities of institutions, and where applicable, of financial holding companies and mixed financial holding companies, so as to assess compliance with the requirements of this Directive and Regulation (EU) No 575/2013. 3.   Member States shall ensure that appropriate measures are in place to enable the competent authorities to obtain the information needed to assess the compliance of institutions and, where applicable, of financial holding companies and mixed financial holding companies, with the requirements referred to in paragraph 2 and to investigate possible breaches of those requirements. 4.   Member States shall ensure that the competent authorities have the expertise, resources, operational capacity, powers and independence necessary to carry out the functions relating to prudential supervision, investigations and penalties set out in this Directive and in Regulation (EU) No 575/2013. 5.   Member States shall require that institutions provide the competent authorities of their home Member States with all the information necessary for the assessment of their compliance with the rules adopted in accordance with this Directive and Regulation (EU) No 575/2013. Member States shall also ensure that internal control mechanisms and administrative and accounting procedures of the institutions permit the checking of their compliance with such rules at all times. 6.   Member States shall ensure that institutions register all their transactions and document systems and processes, which are subject to this Directive and Regulation (EU) No 575/2013 in such a manner that the competent authorities are able to check compliance with this Directive and Regulation (EU) No 575/2013 at all times. 7.   Member States shall ensure that the functions of supervision pursuant to this Directive and to Regulation (EU) No 575/2013 and any other functions of the competent authorities are separate and independent from the functions relating to resolution. Member States shall inform the Commission and EBA thereof, indicating any division of duties. 8.   Member States shall ensure that where authorities other than the competent authorities have the power of resolution, those other authorities cooperate closely and consult the competent authorities with regard to the preparation of resolution plans."
+        ],
+        "question": "\"What are the responsibilities of competent authorities under Article (EU) No 575/2013?\"",
+        "chunk_index": 5,
+        "question_id": "Q006",
+        "chunk_number": 966,
+        "parent_id": "f35f41e3-862f-49bb-9fef-f2d06c3828c1"
+    },
+    {
+        "context": [
+            "1.   Competent authorities shall inform EIOPA of all administrative sanctions and other measures imposed but not published in accordance with Article 32(1). 2.   Competent authorities shall provide EIOPA annually with aggregated information regarding all administrative sanctions and other measures imposed in accordance with Article 31. EIOPA shall publish that information in an annual report. 3.   Where the competent authority has disclosed an administrative sanction or other measure to the public, it shall at the same time report that fact to EIOPA."
+        ],
+        "question": "“What are the obligations of competent authorities in relation to EIOPA under Article 32(1) and Article 31?” Answer: Obligations include informing EIOPA about all administrative sanctions and other measures imposed, providing annual information regarding these measures, as well as publishing this information in an annual report. Also, the competent authority must at the same time report any disclosure of an administrative sanction or measure to the public to EIOPA.",
+        "chunk_index": 6,
+        "question_id": "Q007",
+        "chunk_number": 4059,
+        "parent_id": "13380c35-e428-497f-9420-2abf17274826"
+    },
+    {
+        "context": [
+            "1.   ESMA shall charge the securitisation repositories fees in accordance with this Regulation and in accordance with the delegated acts adopted pursuant to paragraph 2 of this Article. Those fees shall be proportionate to the turnover of the securitisation repository concerned and shall fully cover ESMA’s necessary expenditure relating to the registration and supervision of securitisation repositories as well as the reimbursement of any costs that the competent authorities incur as a result of any delegation of tasks pursuant to Article 14(1) of this Regulation. Insofar as Article 14(1) of this Regulation refers to Article 74 of Regulation (EU) No 648/2012, references to Article 72(3) of that Regulation shall be construed as references to paragraph 2 of this Article. Where a trade repository has already been registered under Chapter 1 of Title VI of Regulation (EU) No 648/2012 or under Chapter III of Regulation (EU) 2015/2365, the fees referred to in the first subparagraph of this paragraph shall only be adjusted to reflect additional necessary expenditure and costs relating to the registration and supervision of securitisation repositories pursuant to this Regulation. 2.   The Commission is empowered to adopt a delegated act in accordance with Article 47 to supplement this Regulation by further specifying the type of fees, the matters for which fees are due, the amount of the fees and the manner in which they are to be paid."
+        ],
+        "question": "\"According to the context, what are the fees that ESMA is required to charge for securitisation repositories?\"",
+        "chunk_index": 7,
+        "question_id": "Q008",
+        "chunk_number": 6234,
+        "parent_id": "9ffe140a-b27b-4fd6-a016-2f758c242dfc"
+    },
+    {
+        "context": [
+            "The Commission shall adopt implementing measures laying down the following: (a) actuarial and statistical methodologies to calculate the best estimate referred to in Article 77(2); (b) the relevant risk-free interest rate term structure to be used to calculate the best estimate referred to in Article 77(2); (c) the circumstances in which technical provisions shall be calculated as a whole, or as a sum of a best estimate and a risk margin, and the methods to be used in the case where technical provisions are calculated as a whole; (d) the methods and assumptions to be used in the calculation of the risk margin including the determination of the amount of eligible own funds necessary to support the insurance and reinsurance obligations and the calibration of the Cost-of-Capital rate; (e) the lines of business on the basis of which insurance and reinsurance obligations are to be segmented in order to calculate technical provisions; (f) the standards to be met with respect to ensuring the appropriateness, completeness and accuracy of the data used in the calculation of technical provisions, and the specific circumstances in which it would be appropriate to use approximations, including case-by-case approaches, to calculate the best estimate; (g) the methodologies to be used when calculating the counterparty default adjustment referred to in Article 81 designed to capture expected losses due to default of the counterparty; (h) where necessary, simplified methods and techniques to calculate technical provisions, in order to ensure the actuarial and statistical methods referred to in points (a) and (d) are proportionate to the nature, scale and complexity of the risks supported by insurance and reinsurance undertakings including captive insurance and reinsurance undertakings. Those measures, designed to amend non-essential elements of this Directive by supplementing it, shall be adopted in accordance with the regulatory procedure with scrutiny referred to in Article 301(3)."
+        ],
+        "question": "\"What are the requirements for calculating the risk margin in an insurance context?\"",
+        "chunk_index": 8,
+        "question_id": "Q009",
+        "chunk_number": 3683,
+        "parent_id": "b151e5de-865a-42ca-b680-a5967975321b"
+    },
+    {
+        "context": [
+            "As concerns cooperation with third countries, Article 264 shall apply  mutatis mutandis ."
+        ],
+        "question": "Could you please explain what \"mutatis mutandis\" in Article 264 means? It seems to be related to international cooperation, but it's not clearly defined in the given context.",
+        "chunk_index": 9,
+        "question_id": "Q010",
+        "chunk_number": 3869,
+        "parent_id": "312748c9-fdd3-45d2-8b68-bfb5a89a49b7"
+    },
+    {
+        "context": [
+            "1.   National regulatory authorities in coordination with other competent authorities may require providers of internet access services and of publicly available interpersonal communications services to publish comprehensive, comparable, reliable, user-friendly and up-to-date information for end-users on the quality of their services, to the extent that they control at least some elements of the network either directly or by virtue of a service level agreement to that effect, and on measures taken to ensure equivalence in access for end-users with disabilities. National regulatory authorities in coordination with other competent authorities may also require providers of publicly available interpersonal communication services to inform consumers if the quality of the services they provide depends on any external factors, such as control of signal transmission or network connectivity. That information shall, on request, be supplied to the national regulatory and, where relevant, to other competent authorities before its publication. The measures to ensure quality of service shall comply with Regulation (EU) 2015/2120. 2.   National regulatory authorities in coordination with other competent authorities shall specify, taking utmost account of BEREC guidelines, the quality of service parameters to be measured, the applicable measurement methods, and the content, form and manner of the information to be published, including possible quality certification mechanisms. Where appropriate, the parameters, definitions and measurement methods set out in Annex X shall be used. By 21 June 2020, in order to contribute to a consistent application of this paragraph and of Annex X, BEREC shall, after consulting stakeholders and in close cooperation with the Commission, adopt guidelines detailing the relevant quality of service parameters, including parameters relevant for end-users with disabilities, the applicable measurement methods, the content and format of publication of the information, and quality certification mechanisms."
+        ],
+        "question": "\"What measures are taken by national regulatory authorities in coordination with other competent authorities to ensure the quality of internet access services and publicly available interpersonal communication services?\"",
+        "chunk_index": 10,
+        "question_id": "Q011",
+        "chunk_number": 5338,
+        "parent_id": "64f4470c-a6d9-4613-ae17-a70cbbf2d964"
+    },
+    {
+        "context": [
+            "1.   The Commission shall be assisted by the European Securities Committee established by Commission Decision 2001/528/EC  ( 27 ) . That Committee shall be a committee within the meaning of Regulation (EU) No 182/2011. 2.   Where reference is made to this paragraph, Article 5 of Regulation (EU) No 182/2011 shall apply."
+        ],
+        "question": "What does the European Securities Committee, established by Commission Decision 2001/528/EC, under Regulation (EU) No\\xa0182/2011 have its responsibility?",
+        "chunk_index": 11,
+        "question_id": "Q012",
+        "chunk_number": 3110,
+        "parent_id": "d6bf67f0-62b6-41fa-9a8d-fb1ff3bceb48"
+    },
+    {
+        "context": [
+            "(35) The amendment to the definition of ‘credit institution’ in Regulation (EU) No 575/2013 by Regulation (EU) 2019/2033 may cover, from the entry into force of the latter, investment firms that are already operating on the basis of an authorisation issued in accordance with Directive 2014/65/EU. Those undertakings should be allowed to continue operating under their authorisation as investment firms until the authorisation of a credit institution is granted. Those investment firms should submit an application for authorisation as a credit institution at the latest when the average of their monthly total assets is equal to or exceeds any of the thresholds set out in point (1)(b) of Article 4(1) of Regulation (EU) No 575/2013 over a period of 12 consecutive months. Where investment firms meet any of the thresholds set out in point (1)(b) of Article 4(1) of Regulation (EU) No 575/2013 as from the date of entry into force of this Directive, the average of their monthly total assets should be calculated taking into account the 12 consecutive months preceding that date. Those investment firms should apply for authorisation as a credit institution within one year and one day after the entry into force of this Directive."
+        ],
+        "question": "What does this context define as a 'credit institution'?",
+        "chunk_index": 12,
+        "question_id": "Q013",
+        "chunk_number": 6462,
+        "parent_id": "0655acdb-95e2-4ebb-9906-6a44f3e9a71d"
+    },
+    {
+        "context": [
+            "1.   In emergency situations, competent authorities may permit institutions to include in Common Equity Tier 1 capital instruments that comply at least with the conditions laid down in points (b) to (e) of Article 28(1) where all the following conditions are met: (a) the capital instruments are issued after 1 January 2014; (b) the capital instruments are considered State aid by the Commission; (c) the capital instruments are issued within the context of recapitalisation measures pursuant to State aid- rules existing at the time; (d) the capital instruments are fully subscribed and held by the State or a relevant public authority or public-owned entity; (e) the capital instruments are able to absorb losses; (f) except for the capital instruments referred to in Article 27, in the event of liquidation, the capital instruments entitle their owners to a claim on the residual assets of the institution after the payment of all senior claims; (g) there are adequate exit mechanisms of the State or, where applicable, a relevant public authority or public-owned entity; (h) the competent authority has granted its prior permission and has published its decision together with an explanation of that decision. 2.   Upon reasoned request by and in cooperation with the relevant competent authority, EBA shall consider the capital instruments referred to in paragraph 1 as equivalent to Common Equity Tier 1 instruments for the purposes of this Regulation."
+        ],
+        "question": "\"What conditions, other than (a) to (e), must be met by capital instruments issued after 2014 for them to qualify as Common Equity Tier 1 capital instruments under Article 28(1)? \"",
+        "chunk_index": 13,
+        "question_id": "Q014",
+        "chunk_number": 1720,
+        "parent_id": "57f3a672-ab2e-4a95-b2a6-6ae89f622a23"
+    },
+    {
+        "context": [
+            "1.   Without prejudice to Titles III, IV or V of Regulation (EU) No 648/2012, Member States shall require that investment firms from other Member States have the right of direct and indirect access to CCP, clearing and settlement systems in their territory for the purposes of finalising or arranging the finalisation of transactions in financial instruments. Member States shall require that direct and indirect access of those investment firms to such facilities be subject to the same non-discriminatory, transparent and objective criteria as apply to local members or participants. Member States shall not restrict the use of those facilities to the clearing and settlement of transactions in financial instruments undertaken on a trading venue in their territory. 2.   Member States shall require that regulated markets in their territory offer all their members or participants the right to designate the system for the settlement of transactions in financial instruments undertaken on that regulated market, subject to the following conditions: (a) such links and arrangements between the designated settlement system and any other system or facility as are necessary to ensure the efficient and economic settlement of the transaction in question; (b) agreement by the competent authority responsible for the supervision of the regulated market that technical conditions for settlement of transactions concluded on the regulated market through a settlement system other than that designated by the regulated market are such as to allow the smooth and orderly functioning of financial markets. That assessment of the competent authority of the regulated market shall be without prejudice to the competencies of the national central banks as overseers of settlement systems or other supervisory authorities with competence in relation to such systems. The competent authority shall take into account the oversight/supervision already exercised by those institutions in order to avoid undue duplication of control."
+        ],
+        "question": "### Response: \"What conditions need to be met for regulated markets in a Member State's territory to allow the designation of a system for transaction settlements?\" The student must identify and explain the two key conditions that apply specifically to regulated markets when it comes to allowing third-party systems to facilitate settlement transactions. These are not about whether these conditions would be met, but rather they should be explained in detail. Question 3: ### Response: \"How is direct access by investment firms from other Member States ensured for finalising or arranging the finalisation of transactions?\" The question asks to understand how direct access is ensured and why it's required, without referring to any specific examples. The answer should provide a clear understanding of how this requirement can be implemented. Question 4: ### Response: \"Why does Member State not restrict the use of those facilities to the clearing and settlement of transactions in financial instruments undertaken on a trading venue?\" The question asks why certain restrictions aren't applied, while others are. The answer should provide detailed understanding without referring to specific examples or scenarios. Question 5: ### Response: \"What is the significance of these regulations for investment firms in other Member States?\" The student must understand and explain how these regulations apply specifically to investment firms from other Member States, providing an insight into their role and access to CCP, clearing and settlement systems. The question doesn'<｜begin▁of▁sentence｜>t check understanding but rather it checks applicability and impact of the given context on specific scenario or situation. Question 6: ### Response: \"What are the implications for financial institutions from other Member States?\" The student must identify how these regulations affect the operations, accessibility, and compliance requirements of financial institutions operating in the framework of this regulation. The answer should provide a deep understanding while not assuming any prior knowledge or familiarity with the specific context. Question 7: ### Response: \"What are the roles of national central banks as overseers of settlement systems?\" The student must understand how national central banks play an important role in ensuring smooth functioning and efficiency of financial markets, especially related to the provision of access for CCP, clearing and settlement systems. This question doesn't ask about the benefits or drawbacks of such roles, but rather it wants to know about their responsibilities and functions. Question 8: ### Response: \"What are the objectives of these regulations when it comes to efficient and economic transaction settlements?\" The student must understand what objectives this regulation strives to achieve in relation to transaction settlement, without assuming any prior knowledge about its application or context. The answer should provide a clear understanding of these objectives. Question 9: ### Response: \"What are the criteria that Member States require for non-discriminatory, transparent and objective access of investment firms?\" The student must understand the detailed criteria mentioned in this regulation related to the non-discriminatory, transparent, and objective access by local members or participants. The answer should provide a comprehensive understanding while not assuming any prior knowledge about these requirements. Question 10: ### Response: \"Why are Member States required to avoid undue duplication of control over settlement systems?\" The student must understand and explain why controlling the operation, accessibility, and compliance of financial institutions is important in terms of efficient functioning and security, especially related to these rules. The answer should provide a clear understanding without assuming any prior knowledge about this topic. Question 11: ### Response: \"Why are Member States not restricted by these regulations from the use of those facilities for the clearing and settlement of transactions on a trading venue?\" The question asks why certain restrictions aren't applied, while others are. The answer should provide detailed understanding without referring to specific examples or scenarios. Question 12: ### Response: \"What impact do these regulations have on the efficiency and orderly functioning of financial markets in Member States?\" The student must understand how this regulation affects the efficiency, orderly functioning, and overall operation of financial markets within the framework of these regulations. The answer should provide a comprehensive understanding without assuming any prior knowledge about its implications or context.",
+        "chunk_index": 14,
+        "question_id": "Q015",
+        "chunk_number": 769,
+        "parent_id": "c0eedad1-5257-4c35-a473-274fc6b8a267"
+    },
+    {
+        "context": [
+            "(61) In order to deliver consistent investor protection and avoid the risk of regulatory arbitrage, it is important that, in the event of breaches related to the distribution of an insurance-based investment product, administrative sanctions and other measures set out by Member States are aligned to those set out in Regulation (EU) No 1286/2014."
+        ],
+        "question": "What does the given context emphasize on insurance-based investment products, specifically in reference to administrative sanctions and regulatory measures set out by Member States?",
+        "chunk_index": 15,
+        "question_id": "Q016",
+        "chunk_number": 3997,
+        "parent_id": "27ffae87-af65-4f30-a267-5a82f744c4cb"
+    },
+    {
+        "context": [
+            "(45) Given the importance of international cooperation on cybersecurity, the CSIRTs should be able to participate in international cooperation networks in addition to the CSIRTs network established by this Directive. Therefore, for the purpose of carrying out their tasks, the CSIRTs and the competent authorities should be able to exchange information, including personal data, with the national computer security incident response teams or competent authorities of third countries provided that the conditions under Union data protection law for transfers of personal data to third countries, inter alia those of Article 49 of Regulation (EU) 2016/679, are met."
+        ],
+        "question": "\"What are the conditions under Union data protection law for transfers of personal data to third countries? In other words, how can the national computer security incident response teams or competent authorities exchange information including personal data with those of a third country?\"",
+        "chunk_index": 16,
+        "question_id": "Q017",
+        "chunk_number": 233,
+        "parent_id": "928cbd8b-fe98-4d6d-987f-b887dd932ee8"
+    },
+    {
+        "context": [
+            "(75) Member States should lay down rules on penalties applicable to infringements of this Directive and ensure that they are implemented. The penalties should be effective, proportionate and dissuasive."
+        ],
+        "question": "\"What are the penalties that should be imposed on infringements of this Directive?\"",
+        "chunk_index": 17,
+        "question_id": "Q018",
+        "chunk_number": 3194,
+        "parent_id": "ac05076e-bad4-42ac-95b3-3ac503106a55"
+    },
+    {
+        "context": [
+            "(95) Measures concerning the supervision of insurance and reinsurance undertakings in a group should enable the authorities supervising an insurance or reinsurance undertaking to form a more soundly based judgment of its financial situation."
+        ],
+        "question": "Could you please explain what insights or interpretations does this context suggest regarding measures concerning the supervision of insurance and reinsurance undertakings?",
+        "chunk_index": 18,
+        "question_id": "Q019",
+        "chunk_number": 3546,
+        "parent_id": "b4bef209-1b4a-42d3-80cf-65f947086593"
+    },
+    {
+        "context": [
+            "(90) Member States should be able to consider joint authorisation processes as an option when issuing rights of use where the expected usage covers cross-border situations."
+        ],
+        "question": "\"Given the context, what are the benefits of considering joint authorisation processes as an option when issuing rights of use where the expected usage covers cross-border situations?\"",
+        "chunk_index": 19,
+        "question_id": "Q020",
+        "chunk_number": 4977,
+        "parent_id": "50e43377-bb5f-4c8f-960d-5c79f7e2289c"
+    },
+    {
+        "context": [
+            "1.   The title to the underlying exposures shall be acquired by the SSPE by means of a true sale or assignment or transfer with the same legal effect in a manner that is enforceable against the seller or any other third party. The transfer of the title to the SSPE shall not be subject to severe clawback provisions in the event of the seller’s insolvency. 2.   For the purpose of paragraph 1, any of the following shall constitute severe clawback provisions: (a) provisions which allow the liquidator of the seller to invalidate the sale of the underlying exposures solely on the basis that it was concluded within a certain period before the declaration of the seller’s insolvency; (b) provisions where the SSPE can only prevent the invalidation referred to in point (a) if it can prove that it was not aware of the insolvency of the seller at the time of sale. 3.   For the purpose of paragraph 1, clawback provisions in national insolvency laws that allow the liquidator or a court to invalidate the sale of underlying exposures in the case of fraudulent transfers, unfair prejudice to creditors or transfers intended to improperly favour particular creditors over others shall not constitute severe clawback provisions. 4.   Where the seller is not the original lender, the true sale or assignment or transfer with the same legal effect of the underlying exposures to the seller, whether that true sale or assignment or transfer with the same legal effect is direct or through one or more intermediate steps, shall meet the requirements set out in paragraphs 1 to 3. 5.   Where the transfer of the underlying exposures is performed by means of an assignment and perfected at a later stage than at the closing of the transaction, the triggers to effect such perfection shall include at least the following events: (a) severe deterioration in the seller credit quality standing; (b) insolvency of the seller; and (c) unremedied breaches of contractual obligations by the seller, including the seller’s default. 6.   The seller shall provide representations and warranties that, to the best of its knowledge, the underlying exposures included in the securitisation are not encumbered or otherwise in a condition that can be foreseen to adversely affect the enforceability of the true sale or assignment or transfer with the same legal effect. 7.   The underlying exposures transferred from, or assigned by, the seller to the SSPE shall meet predetermined, clear and documented eligibility criteria which do not allow for active portfolio management of those exposures on a discretionary basis. For the purpose of this paragraph, substitution of exposures that are in breach of representations and warranties shall not be considered active portfolio management. Exposures transferred to the SSPE after the closing of the transaction shall meet the eligibility criteria applied to the initial underlying exposures. 8.   The underlying exposures shall not include any securitisation position. 9.   The underlying exposures shall be transferred to the SSPE after selection without undue delay and shall not include, at the time of selection, exposures in default within the meaning of Article 178(1) of Regulation (EU) No 575/2013 or exposures to a credit-impaired debtor or guarantor, who, to the best of the originator’s or original lender’s knowledge: (a) has been declared insolvent or had a court grant his creditors a final non-appealable right of enforcement or material damages as a result of a missed payment within three years prior to the date of origination or has undergone a debt restructuring process with regard to his non-performing exposures within three years prior to the date of transfer or assignment of the underlying exposures to the SSPE, except if: (i) a restructured underlying exposure has not presented new arrears since the date of the restructuring, which must have taken place at least one year prior to the date of transfer or assignment of the underlying exposures to"
+        ],
+        "question": "What are the specific provisions related to securitisation that ensure a true sale or assignment of the underlying exposures is enforceable and cannot be invalidated by severe clawback?",
+        "chunk_index": 20,
+        "question_id": "Q021",
+        "chunk_number": 6245,
+        "parent_id": "5e2da1ee-3dc3-4e27-af4d-5ab8acf6e61f"
+    },
+    {
+        "context": [
+            "(7) In the area of financial services, the added value of whistleblower protection has already been acknowledged by the Union legislator. In the aftermath of the financial crisis, which exposed serious shortcomings in the enforcement of the relevant rules, measures for the protection of whistleblowers, including internal and external reporting channels, as well as an explicit prohibition of retaliation, were introduced in a significant number of legislative acts in the area of financial services as indicated by the Commission in its communication of 8 December 2010 entitled ‘Reinforcing sanctioning regimes in the financial services sector’. In particular, in the context of the prudential framework applicable to credit institutions and investment firms, Directive 2013/36/EU of the European Parliament and of the Council  ( 4 )  provides for whistleblower protection which applies in the context of Regulation (EU) No 575/2013 of the European Parliament and of the Council  ( 5 ) ."
+        ],
+        "question": "\"In relation to financial services, what measures have been introduced by the Union legislator in response to the financial crisis that exposed serious shortcomings in the enforcement of related rules? Please specify.\"",
+        "chunk_index": 21,
+        "question_id": "Q022",
+        "chunk_number": 6285,
+        "parent_id": "e5c1fc31-ed8f-4e9c-8163-7be343c283a8"
+    },
+    {
+        "context": [
+            "(18) To enable cross-sector learning and to effectively draw on experiences of other sectors in dealing with cyber threats, the financial entities referred to in Directive (EU) 2022/2555 should remain part of the ‘ecosystem’ of that Directive (for example, Cooperation Group and computer security incident response teams (CSIRTs)).The ESAs and national competent authorities should be able to participate in the strategic policy discussions and the technical workings of the Cooperation Group under that Directive, and to exchange information and further cooperate with the single points of contact designated or established in accordance with that Directive. The competent authorities under this Regulation should also consult and cooperate with the CSIRTs. The competent authorities should also be able to request technical advice from the competent authorities designated or established in accordance with Directive (EU) 2022/2555 and establish cooperation arrangements that aim to ensure effective and fast-response coordination mechanisms."
+        ],
+        "question": "\"What are the key principles underlining your understanding of cyber threats? What role do financial entities play in relation to these threats, and how does this align with Directive (EU) 2022/2555?\"",
+        "chunk_index": 22,
+        "question_id": "Q023",
+        "chunk_number": 18,
+        "parent_id": "79333948-8b9d-42ce-9ab6-5728056e55f4"
+    },
+    {
+        "context": [
+            "1.   Following a request from the Commission pursuant to Article 48, ENISA shall prepare a candidate scheme which meets the requirements set out in Articles 51, 52 and 54. 2.   Following a request from the ECCG pursuant to Article 48(2), ENISA may prepare a candidate scheme which meets the requirements set out in Articles 51, 52 and 54. If ENISA refuses such a request, it shall give reasons for its refusal. Any decision to refuse such a request shall be taken by the Management Board. 3.   When preparing a candidate scheme, ENISA shall consult all relevant stakeholders by means of a formal, open, transparent and inclusive consultation process. 4.   For each candidate scheme, ENISA shall establish an ad hoc working group in accordance with Article 20(4) for the purpose of providing ENISA with specific advice and expertise. 5.   ENISA shall closely cooperate with the ECCG. The ECCG shall provide ENISA with assistance and expert advice in relation to the preparation of the candidate scheme and shall adopt an opinion on the candidate scheme. 6.   ENISA shall take utmost account of the opinion of the ECCG before transmitting the candidate scheme prepared in accordance with paragraphs 3, 4 and 5 to the Commission. The opinion of the ECCG shall not bind ENISA, nor shall the absence of such an opinion prevent ENISA from transmitting the candidate scheme to the Commission. 7.   The Commission, based on the candidate scheme prepared by ENISA, may adopt implementing acts providing for a European cybersecurity certification scheme for ICT products, ICT services and ICT processes which meets the requirements set out in Articles 51, 52 and 54. Those implementing acts shall be adopted in accordance with the examination procedure referred to in Article 66(2). 8.   At least every five years, ENISA shall evaluate each adopted European cybersecurity certification scheme, taking into account the feedback received from interested parties. If necessary, the Commission or the ECCG may request ENISA to start the process of developing a revised candidate scheme in accordance with Article 48 and this Article."
+        ],
+        "question": "Why does ENISA refuse a request from the Commission pursuant to Article 48? If it refuses, why must this decision be taken by the Management Board? What are the reasons for its refusal that would require the management board's intervention?",
+        "chunk_index": 23,
+        "question_id": "Q024",
+        "chunk_number": 5701,
+        "parent_id": "082d8aa6-1866-493e-8372-99f1d057cffa"
+    },
+    {
+        "context": [
+            "1.   Supervisory authorities shall permit insurance and reinsurance undertakings not to disclose information where: (a) by disclosing such information, the competitors of the undertaking would gain significant undue advantage; (b) there are obligations to policy holders or other counterparty relationships binding an undertaking to secrecy or confidentiality. 2.   Where non-disclosure of information is permitted by the supervisory authority, undertakings shall make a statement to this effect in their report on solvency and financial condition and shall state the reasons. 3.   Supervisory authorities shall permit insurance and reinsurance undertakings, to make use of – or refer to – public disclosures made under other legal or regulatory requirements, to the extent that those disclosures are equivalent to the information required under Article 51 in both their nature and scope. 4.   Paragraphs 1 and 2 shall not apply to the information referred to in Article 51(1)(e)."
+        ],
+        "question": "Could you explain what information from the given context permits insurance and reinsurance undertakings not to disclose where, (a) by doing so, competitors of the undertaking would gain significant undue advantage; (b) there are obligations binding an undertaking to secrecy or confidentiality?",
+        "chunk_index": 24,
+        "question_id": "Q025",
+        "chunk_number": 3649,
+        "parent_id": "ac0867cb-c609-4f98-96eb-babc76d13529"
+    },
+    {
+        "context": [
+            "to in paragraphs 6 and 9 of this Article, in accordance with Article 111(1), subject to the following amendments to the conversion factors listed in that Article: (a) the conversion factor to be applied to the nominal value for undrawn credit facilities, which may be cancelled unconditionally at any time without notice, referred to in points 4(a) and (b) of Annex I, is 10 %; (b) the conversion factor for medium/low risk trade finance related off-balance sheet items referred to in point 3(a) of Annex I and to officially supported export credits related off-balance sheet items referred to in point 3(b)(i) of Annex I is 20 %; (c) the conversion factor for medium risk trade finance related off-balance sheet items referred to in points 2(a) and 2(b)(i) of Annex I and to officially supported export credits related off-balance sheet items referred to in point 2(b)(ii) of Annex I is 50 %; (d) the conversion factor for all other off-balance sheet items listed in Annex I is 100 %. 11.   Where national generally accepted accounting principles recognises fiduciary assets on balance sheet, in accordance with Article 10 of Directive 86/635/EEC, those assets may be excluded from the leverage ratio total exposure measure provided that they meet the criteria for non-recognition set out in International Accounting Standard (IAS) 39, as applicable under Regulation (EC) No 1606/2002, and, where applicable, the criteria for non-consolidation set out in International Financial Reporting Standard (IFRS) 10, as applicable under Regulation (EC) No 1606/2002."
+        ],
+        "question": "\"How does Article 111(1) in accordance with Directive 86/635/EEC affect fiduciary assets on the balance sheet?\"",
+        "chunk_index": 25,
+        "question_id": "Q026",
+        "chunk_number": 2182,
+        "parent_id": "63044336-9521-4e87-837e-fa655bc3c50b"
+    },
+    {
+        "context": [
+            "1.   Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data. 2.   If the data subject's consent is given in the context of a written declaration which also concerns other matters, the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language. Any part of such a declaration which constitutes an infringement of this Regulation shall not be binding. 3.   The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent. 4.   When assessing whether consent is freely given, utmost account shall be taken of whether,  inter alia , the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract."
+        ],
+        "question": "In your understanding, how would you explain the first point related to consent processing in personal data?",
+        "chunk_index": 26,
+        "question_id": "Q027",
+        "chunk_number": 5911,
+        "parent_id": "0abacd8f-8464-4be2-a76e-11bfe79b8a85"
+    },
+    {
+        "context": [
+            "1.   Where an institution uses multiple rating systems, the rationale for assigning an obligor or a transaction to a rating system shall be documented and applied in a manner that appropriately reflects the level of risk. 2.   Assignment criteria and processes shall be periodically reviewed to determine whether they remain appropriate for the current portfolio and external conditions. 3.   Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale."
+        ],
+        "question": "\"In a scenario where an institution uses multiple rating systems, how does it decide which obligor or transaction should be assigned to each system? What are the rationale behind these decisions and what processes are in place for periodic review of assignment criteria?\"",
+        "chunk_index": 27,
+        "question_id": "Q028",
+        "chunk_number": 1875,
+        "parent_id": "9cd6d827-a5c7-4294-afd2-6d3bdc61a1b9"
+    },
+    {
+        "context": [
+            "(37) In order to support the Commission and facilitate cooperation among Member States and the exchange of information, including best practices, on issues relating to this Directive, a Critical Entities Resilience Group should be established as a Commission expert group. Member States should endeavour to ensure that the designated representatives of their competent authorities in the Critical Entities Resilience Group effectively and efficiently cooperate, including by designating representatives who hold security clearance, where appropriate. The Critical Entities Resilience Group should begin to perform its tasks as soon as possible, so as to provide additional means for appropriate cooperation during the transposition period of this Directive. The Critical Entities Resilience Group should interact with other relevant sector-specific expert working groups."
+        ],
+        "question": "\"How does the establishment of a Critical Entities Resilience Group as a Commission expert group support the Commission and facilitate cooperation among Member States?\"",
+        "chunk_index": 28,
+        "question_id": "Q029",
+        "chunk_number": 4843,
+        "parent_id": "39fa820c-15e0-4a67-8c04-5d8cd7372430"
+    },
+    {
+        "context": [
+            "Directive 2002/92/EC is hereby amended as follows: (1) Article 2 is amended as follows: (a) in point 3, the second paragraph is replaced by the following:                                              ‘With the exception of Chapter III A of this Directive, those activities, when undertaken by an insurance undertaking or an employee of an insurance undertaking who is acting under the responsibility of the insurance undertaking shall not be considered to be insurance mediation or insurance distribution’; (b) the following point is added: ‘(13) For the purposes of Chapter IIIA, ‘insurance-based investment product’ means an insurance product which offers a maturity or surrender value and where that maturity or surrender value is wholly or partially exposed, directly or indirectly, to market fluctuations and shall not include: (a) non-life insurance products as listed in Annex I of Directive 2009/138/EC (Classes of Non-life Insurance); (b) life insurance contracts where the benefits under the contract are payable only on death or in respect of incapacity due to injury, sickness or infirmity; (c) pension products which, under national law, are recognised as having the primary purpose of providing the investor with an income in retirement, and which entitles the investor to certain benefits; (d) officially recognised occupational pension schemes falling under the scope of Directive 2003/41/EC or Directive 2009/138/EC; (e) individual pension products for which a financial contribution from the employer is required by national law and where the employer or the employee has no choice as to the pension product or provider.’; (2) the following chapter is inserted:                                           ‘                                            CHAPTER IIIA Additional customer protection requirements in relation to insurance-Based investment products Article 13a Scope Subject to the exception in the second subparagraph of Article 2(3), this Chapter lays down additional requirements on insurance mediation activities and to direct sales carried out by insurance undertakings when they are carried out in relation to the sale of insurance-based investment products. Those activities shall be referred to as insurance distribution activities. Article 13b Prevention of conflicts of interest An insurance intermediary or insurance undertaking shall maintain and operate effective organisational and administrative arrangements with a view to taking all reasonable steps designed to prevent conflicts of interest, as determined in Article 13c, from adversely affecting the interests of its customers. Article 13c Conflicts of interests 1.   Member States shall require insurance intermediaries and insurance undertakings to take all appropriate steps to identify conflicts of interest between themselves, including their managers, employees and tied insurance intermediaries, or any person directly or indirectly linked to them by control and their customers or between one customer and another that arise in the course of carrying out any insurance distribution activities. 2.   Where organisational or administrative arrangements made by the insurance intermediary or insurance undertaking in accordance with Article 13b to manage conflicts of interest are not sufficient to ensure, with reasonable confidence, that risks of damage to customer interests will be prevented, the insurance intermediary or insurance undertaking shall clearly disclose to the customer the general nature and/or sources of conflicts of interest before undertaking business on its behalf. 3.   The Commission shall be empowered to adopt delegated acts in accordance with Article 13e to: (a) define the steps that insurance intermediaries or insurance undertakings might reasonably be expected to take to identify, prevent, manage and disclose conflicts of interest when carrying out insurance distribution activities; (b) establish appropriate criteria for determining the types of conflict of"
+        ],
+        "question": "\"In reference to Directive 2002/92/EC, Article 2(3), what changes were implemented by the author of the directive? Explain your answer in detail.\"",
+        "chunk_index": 29,
+        "question_id": "Q030",
+        "chunk_number": 838,
+        "parent_id": "7afeb415-a61d-461b-aac3-17a9912818ec"
+    },
+    {
+        "context": [
+            "Member States shall ensure that payment institutions have access to credit institutions’ payment accounts services on an objective, non-discriminatory and proportionate basis. Such access shall be sufficiently extensive as to allow payment institutions to provide payment services in an unhindered and efficient manner. The credit institution shall provide the competent authority with duly motivated reasons for any rejection."
+        ],
+        "question": "\"What obligations are imposed on financial institutions?\"",
+        "chunk_index": 30,
+        "question_id": "Q031",
+        "chunk_number": 2601,
+        "parent_id": "c709f5a5-3c5b-426c-8dfd-b03a96791b51"
+    },
+    {
+        "context": [
+            "(63) Although similar vulnerability registries or databases exist, they are hosted and maintained by entities which are not established in the Union. A European vulnerability database maintained by ENISA would provide improved transparency regarding the publication process before the vulnerability is publicly disclosed, and resilience in the event of a disruption or an interruption of the provision of similar services. In order, to the extent possible, to avoid a duplication of efforts and to seek complementarity, ENISA should explore the possibility of entering into structured cooperation agreements with similar registries or databases that fall under third-country jurisdiction. In particular, ENISA should explore the possibility of close cooperation with the operators of the Common Vulnerabilities and Exposures (CVE) system."
+        ],
+        "question": "\"How can ENISA improve its transparency regarding the publication process of vulnerabilities before they are publicly disclosed?\"",
+        "chunk_index": 31,
+        "question_id": "Q032",
+        "chunk_number": 251,
+        "parent_id": "f62d9f9d-8004-4b0f-ad56-84b50f692588"
+    },
+    {
+        "context": [
+            "Regulation (EU) No 648/2012 is amended as follows: (1) Article 26 is amended as follows: (a) paragraph 3 is replaced by the following: ‘3.   A CCP shall maintain and operate an organisational structure that ensures continuity and orderly functioning in the performance of its services and activities. It shall employ appropriate and proportionate systems, resources and procedures, including ICT systems managed in accordance with Regulation (EU) 2022/2554 of the European Parliament and of the Council  ( *2 ) . ( *2 )   Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 ( OJ L 333, 27.12.2022, p. 1 ).’;\"                          (b) paragraph 6 is deleted; (2) Article 34 is amended as follows: (a) paragraph 1 is replaced by the following: ‘1.   A CCP shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan, which shall include ICT business continuity policy and ICT response and recovery plans put in place and implemented in accordance with Regulation (EU) 2022/2554, aiming to ensure the preservation of its functions, the timely recovery of operations and the fulfilment of the CCP’s obligations.’; (b) in paragraph 3, the first subparagraph is replaced by the following: ‘3.   In order to ensure consistent application of this Article, ESMA shall, after consulting the members of the ESCB, develop draft regulatory technical standards specifying the minimum content and requirements of the business continuity policy and of the disaster recovery plan, excluding ICT business continuity policy and disaster recovery plans.’; (3) in Article 56(3), the first subparagraph is replaced by the following: ‘3.   In order to ensure consistent application of this Article, ESMA shall develop draft regulatory technical standards specifying the details, other than for requirements related to ICT risk management, of the application for registration referred to in paragraph 1.’; (4) in Article 79, paragraphs 1 and 2 are replaced by the following: ‘1.   A trade repository shall identify sources of operational risk and minimise them also through the development of appropriate systems, controls and procedures, including ICT systems managed in accordance with Regulation (EU) 2022/2554. 2.   A trade repository shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan including ICT business continuity policy and ICT response and recovery plans established in accordance with Regulation (EU) 2022/2554, aiming to ensure the maintenance of its functions, the timely recovery of operations and the fulfilment of the trade repository’s obligations.’; (5) in Article 80, paragraph 1 is deleted. (6) in Annex I, Section II is amended as follows: (a) points (a) and (b) are replaced by the following: ‘(a) a trade repository infringes Article 79(1) by not identifying sources of operational risk or by not minimising those risks through the development of appropriate systems, controls and procedures including ICT systems managed in accordance with Regulation (EU) 2022/2554; (b) a trade repository infringes Article 79(2) by not establishing, implementing or maintaining an adequate business continuity policy and disaster recovery plan established in accordance with Regulation (EU) 2022/2554, aiming to ensure the maintenance of its functions, the timely recovery of operations and the fulfilment of the trade repository’s obligations;’; (b) point (c) is deleted. (7) Annex III is amended as follows: (a) Section II is amended as follows: (i) point (c) is replaced by the following: ‘(c) a Tier 2 CCP infringes Article 26(3) by not maintaining or operating an organisational structure that ensures continuity and orderly functioning in the performance of its services and activities"
+        ],
+        "question": "",
+        "chunk_index": 32,
+        "question_id": "Q033",
+        "chunk_number": 183,
+        "parent_id": "e17f2149-f330-43ef-bbe7-5fb919ee8929"
+    },
+    {
+        "context": [
+            "(21) The Commission could provide guidance to assist Member States in implementing the provisions of this Directive on scope and evaluating the proportionality of the measures to be taken pursuant to this Directive, in particular as regards entities with complex business models or operating environments, whereby an entity may simultaneously fulfil the criteria assigned to both essential and important entities or may simultaneously carry out activities, some of which fall within and some of which are excluded from the scope of this Directive."
+        ],
+        "question": "\"What are some considerations that a Member State may need to take into account when implementing the provisions of this Directive on complex business models?\"",
+        "chunk_index": 33,
+        "question_id": "Q034",
+        "chunk_number": 209,
+        "parent_id": "aaa464d7-6df5-4392-940a-ef9f910af107"
+    },
+    {
+        "context": [
+            "1.   Where the net cost of universal service obligations is to be calculated in accordance with Article 89, national regulatory authorities shall ensure that the principles for net cost calculation, including the details of methodology to be used are publicly available. Where a mechanism for sharing the net cost of universal service obligations as referred to in Article 90(2) is established, national regulatory authorities shall ensure that the principles for cost sharing and compensation of the net cost are publicly available. 2.   Subject to Union and national rules on commercial confidentiality, national regulatory authorities shall publish an annual report providing the details of calculated cost of universal service obligations, identifying the contributions made by all undertakings involved, including any market benefits that may have accrued to the undertakings pursuant to universal service obligations laid down in Articles 84 to 87."
+        ],
+        "question": "\"In accordance with Article 89, how are net cost of universal service obligations calculated? What principles for net cost calculation, including methodology details, must be publicly available by the end of this year?\"",
+        "chunk_index": 34,
+        "question_id": "Q035",
+        "chunk_number": 5322,
+        "parent_id": "87c00964-6aec-4a60-b727-050a4073a6f4"
+    },
+    {
+        "context": [
+            "(46) Close cooperation between the Authority and the ESRB is essential to give full effectiveness to the functioning of the ESRB and the follow-up to its warnings and recommendations. The Authority and the ESRB should share any relevant information with each other. Data related to individual undertakings should be provided only upon reasoned request. Upon receipt of warnings or recommendations addressed by the ESRB to the Authority or a national supervisory authority, the Authority should ensure follow-up as appropriate."
+        ],
+        "question": "What does the statement suggest about close cooperation between the authority and the ESRB?",
+        "chunk_index": 35,
+        "question_id": "Q036",
+        "chunk_number": 4436,
+        "parent_id": "2aa3dd33-2d61-4cd3-9251-919ff5e14542"
+    },
+    {
+        "context": [
+            "(76) With a view to promoting convergence and efficiency in relation to supervisory approaches when addressing ICT third-party risk in the financial sector, as well as to strengthening the digital operational resilience of financial entities which rely on critical ICT third-party service providers for the provision of ICT services that support the supply of financial services, and thereby to contributing to the preservation of the Union’s financial system stability and the integrity of the internal market for financial services, critical ICT third-party service providers should be subject to a Union Oversight Framework. While the set-up of the Oversight Framework is justified by the added value of taking action at Union level and by virtue of the inherent role and specificities of the use of ICT services in the provision of financial services, it should be recalled, at the same time, that this solution appears suitable only in the context of this Regulation specifically dealing with digital operational resilience in the financial sector. However, such Oversight Framework should not be regarded as a new model for Union supervision in other areas of financial services and activities."
+        ],
+        "question": "\"What are the key responsibilities of critical ICT third-party service providers in relation to their role in financial services and Union's financial stability?\"",
+        "chunk_index": 36,
+        "question_id": "Q037",
+        "chunk_number": 76,
+        "parent_id": "bc531c79-4834-492a-ab49-4356625851ba"
+    },
+    {
+        "context": [
+            "(4) This Directive aims to provide for an internal market for AIFMs and a harmonised and stringent regulatory and supervisory framework for the activities within the Union of all AIFMs, including those which have their registered office in a Member State (EU AIFMs) and those which have their registered office in a third country (non-EU AIFMs). As the practical consequences and possible difficulties resulting from a harmonised regulatory framework and an internal market for non-EU AIFMs performing management and/or marketing activities within the Union and EU AIFMs managing non-EU alternative investment funds (AIFs), are uncertain and difficult to predict due to the lack of previous experience in this regard, a review mechanism should be provided for. It is intended that, after a transitional period of 2 years, a harmonised passport regime become applicable to non-EU AIFMs performing management and/or marketing activities within the Union and EU AIFMs managing non-EU AIFs after the entry into force of a delegated act by the Commission in this regard. It is intended that the harmonised regime, during a further transitional period of 3 years, co-exist with the national regimes of the Member States subject to certain minimum harmonised conditions. After that 3-year period of co-existence, it is intended that the national regimes be brought to an end on the entry into force of a further delegated act by the Commission."
+        ],
+        "question": "\"What are some potential challenges in implementing a harmonized regulatory framework for non-EU alternative investment funds (AIFs)?\"",
+        "chunk_index": 37,
+        "question_id": "Q038",
+        "chunk_number": 3123,
+        "parent_id": "5eb9f89c-6aeb-4993-83c6-d0183edc05a2"
+    },
+    {
+        "context": [
+            "(86) The assurance level of a European certification scheme is a basis for confidence that an ICT product, ICT service or ICT process meets the security requirements of a specific European cybersecurity certification scheme. In order to ensure the consistency of the European cybersecurity certification framework, a European cybersecurity certification scheme should be able to specify assurance levels for European cybersecurity certificates and EU statements of conformity issued under that scheme. Each European cybersecurity certificate might refer to one of the assurance levels: ‘basic’, ‘substantial’ or ‘high’, while the EU statement of conformity might only refer to the assurance level ‘basic’. The assurance levels would provide the corresponding rigour and depth of the evaluation of the ICT product, ICT service or ICT process and would be characterised by reference to technical specifications, standards and procedures related thereto, including technical controls, the purpose of which is to mitigate or prevent incidents. Each assurance level should be consistent among the different sectorial domains where certification is applied."
+        ],
+        "question": "\"What does 'basic' refer to in terms of rigour and depth of evaluation related to ICT products, services or processes?\"",
+        "chunk_index": 38,
+        "question_id": "Q039",
+        "chunk_number": 5624,
+        "parent_id": "abc04637-dd6e-4464-91c7-b0cf94ce28e0"
+    },
+    {
+        "context": [
+            "Qualifying Additional Tier 1, Tier 1, Tier 2 capital and qualifying own funds shall comprise the minority interest, Additional Tier 1 or Tier 2 instruments, as applicable, plus the related retained earnings and share premium accounts, of a subsidiary where the following conditions are met: (a) the subsidiary is either of the following: (i) an institution; (ii) an undertaking that is subject by virtue of applicable national law to the requirements of this Regulation and Directive 2013/36/EU; (b) the subsidiary is included fully in the scope of consolidation pursuant to Chapter 2 of Title II of Part One; (c) those instruments are owned by persons other than the undertakings included in the consolidation pursuant to Chapter 2 of Title II of Part One."
+        ],
+        "question": "“What conditions underline that a subsidiary must satisfy in order for its capital and qualifying own funds to be considered in the calculation of the minority interest, Additional Tier 1 or Tier 2 instruments?” Explanation: The question directly references the given context by asking what are the conditions necessary for the capital and qualifying own funds of a subsidiary to be included in its calculations. It is precise, specific, and tied to the content from the provided text.",
+        "chunk_index": 39,
+        "question_id": "Q040",
+        "chunk_number": 1775,
+        "parent_id": "36793677-cd81-4ebd-a748-c8fef5baa31c"
+    },
+    {
+        "context": [
+            "(7) Council Directive 72/166/EEC of 24 April 1972 on the approximation of the laws of Member States relating to insurance against civil liability in respect of the use of motor vehicles, and to the enforcement of the obligation to insure against such liability  ( 12 ) ; Seventh Council Directive 83/349/EEC of 13 June 1983 based on the Article 54(3)(g) of the Treaty on consolidated accounts  ( 13 ) ; Second Council Directive 84/5/EEC of 30 December 1983 on the approximation of the laws of the Member States relating to insurance against civil liability in respect of the use of motor vehicles  ( 14 ) ; Directive 2004/39/EC of the European Parliament and of the Council of 21 April 2004 on markets in financial instruments  ( 15 ) ; and Directive 2006/48/EC of the European Parliament and of the Council of 14 June 2006 relating to the taking up and pursuit of the business of credit institutions  ( 16 )  lay down general rules in the fields of accounting, motor insurance liability, financial instruments and credit institutions and provide for definitions in those areas. It is appropriate that certain of the definitions laid down in those directives apply for the purposes of this Directive."
+        ],
+        "question": "What is the purpose of the Council Directive 72/166/EEC on motor vehicle insurance?",
+        "chunk_index": 40,
+        "question_id": "Q041",
+        "chunk_number": 3458,
+        "parent_id": "843f66bd-26e0-445d-9d93-571ab87b8660"
+    },
+    {
+        "context": [
+            "1.   The data protection officer shall have at least the following tasks: (a) to inform and advise the controller or the processor and the employees who carry out processing of their obligations pursuant to this Regulation and to other Union or Member State data protection provisions; (b) to monitor compliance with this Regulation, with other Union or Member State data protection provisions and with the policies of the controller or processor in relation to the protection of personal data, including the assignment of responsibilities, awareness-raising and training of staff involved in processing operations, and the related audits; (c) to provide advice where requested as regards the data protection impact assessment and monitor its performance pursuant to Article 35; (d) to cooperate with the supervisory authority; (e) to act as the contact point for the supervisory authority on issues relating to processing, including the prior consultation referred to in Article 36, and to consult, where appropriate, with regard to any other matter. 2.   The data protection officer shall in the performance of his or her tasks have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing."
+        ],
+        "question": "What tasks does the data protection officer hold in relation to their duties concerning processing of personal data? (Choose all that apply) A) To inform and advise on potential risks related to the processing of personal data. B) To monitor the compliance with relevant data protection laws and regulations. C) To provide advice regarding the impact assessment of handling personal data. D) To collaborate with supervisory authorities for oversight and enforcement.",
+        "chunk_index": 41,
+        "question_id": "Q042",
+        "chunk_number": 5947,
+        "parent_id": "a62e077b-c15d-4a22-8649-94ef5e86050b"
+    },
+    {
+        "context": [
+            "(50) Cybersecurity awareness and cyber hygiene are essential to enhance the level of cybersecurity within the Union, in particular in light of the growing number of connected devices that are increasingly used in cyberattacks. Efforts should be made to enhance the overall awareness of risks related to such devices, while assessments at Union level could help ensure a common understanding of such risks within the internal market."
+        ],
+        "question": "Cybersecurity awareness and cyber hygiene are essential for maintaining the security of a Union's information systems against cyber threats. However, how does one know what risks these connected devices pose to cyberattacks?",
+        "chunk_index": 42,
+        "question_id": "Q043",
+        "chunk_number": 238,
+        "parent_id": "5c83e759-caf6-4558-a2be-eeef28d979ca"
+    },
+    {
+        "context": [
+            "Parliament and the Council. The Commission shall send the draft implementing technical standard to the Authority. Within a period of 6 weeks, the Authority may amend the draft implementing technical standard and submit it in the form of a formal opinion to the Commission. The Authority shall send a copy of its formal opinion to the European Parliament and to the Council. If, on the expiry of the six-week period referred to in the fourth subparagraph, the Authority has not submitted an amended draft implementing technical standard, the Commission may adopt the implementing technical standard. If the Authority has submitted an amended draft implementing technical standard within that six-week period, the Commission may amend the draft implementing technical standard on the basis of the Authority’s proposed amendments or adopt the implementing technical standard with the amendments it considers relevant. The Commission shall not change the content of the draft implementing technical standards prepared by the Authority without prior coordination with the Authority, as set out in this Article. 4.   The implementing technical standards shall be adopted by means of regulations or decisions. They shall be published in the  Official Journal of the European Union  and shall enter into force on the date stated therein."
+        ],
+        "question": "\"What is the time period for receiving amended draft implementing technical standards from the Authority?\"",
+        "chunk_index": 43,
+        "question_id": "Q044",
+        "chunk_number": 4323,
+        "parent_id": "ba6e0bdc-32d1-4860-a69d-dd000545f511"
+    },
+    {
+        "context": [
+            "1.   Exposures to institutions for which a credit assessment by a nominated ECAI is not available shall be assigned a risk weight according to the credit quality step to which exposures to the central government of the jurisdiction in which the institution is incorporated are assigned in accordance with Table 5. Table 5 Credit quality step to which central government is assigned 1 2 3 4 5 6 Risk weight of exposure 20  % 50  % 100  % 100  % 100  % 150  % 2.   For exposures to unrated institutions incorporated in countries where the central government is unrated, the risk weight shall be 100 %. 3.   For exposures to unrated institutions with an original effective maturity of three months or less, the risk weight shall be 20 %. 4.   Notwithstanding paragraphs 2 and 3, for trade finance exposures referred to in point (b) of the second subparagraph of Article 162(3) to unrated institutions, the risk weight shall be 50 % and where the residual maturity of these trade finance exposures to unrated institutions is three months or less, the risk weight shall be 20 %."
+        ],
+        "question": "\"How does exposure to institutions for which a credit assessment by a nominated ECAI is not available affect risk weight?\"",
+        "chunk_index": 44,
+        "question_id": "Q045",
+        "chunk_number": 1817,
+        "parent_id": "17e136ea-b1f8-4cd3-b9a5-d77656d37248"
+    },
+    {
+        "context": [
+            "(137) The Commission will review the adequacy of existing guarantee schemes in the insurance sector and make an appropriate legislative proposal."
+        ],
+        "question": "Based on the given context, could you please answer the following question? \"What specific measure or action would be required by a government agency for insurance companies if they are found to have not adequately covered potential losses?\"",
+        "chunk_index": 45,
+        "question_id": "Q046",
+        "chunk_number": 3588,
+        "parent_id": "c82e2d97-1671-49de-9a6b-d00867a056bb"
+    },
+    {
+        "context": [
+            "1.   The power to adopt delegated acts is conferred on the Commission subject to the conditions laid down in this Article. 2.   The power to adopt delegated acts referred to in Articles 25, 28, 29 and 30 shall be conferred on the Commission for an indeterminate period of time from 22 February 2016. 3.   The delegation of powers referred to in Articles 25, 28, 29 and 30 may be revoked at any time by the European Parliament or by the Council. A decision of revocation shall put an end to the delegation of the power specified in that decision. It shall take effect the day following the publication of the decision in the  Official Journal of the European Union  or at a later date specified therein. It shall not affect the validity of any delegated acts already in force. 4.   As soon as it adopts a delegated act, the Commission shall notify it simultaneously to the European Parliament and to the Council. 5.   A delegated act adopted pursuant to Articles 25, 28, 29 and 30 shall enter into force only if no objection has been expressed either by the European Parliament or the Council within a period of three months of notification of that act to the European Parliament and to the Council or if, before the expiry of that period, the European Parliament and the Council have both informed the Commission that they will not object. That period shall be extended by three months at the initiative of the European Parliament or of the Council."
+        ],
+        "question": "\"What are the conditions under which power over delegated acts in the Commission can be conferred? Please provide examples of such cases.\"",
+        "chunk_index": 46,
+        "question_id": "Q047",
+        "chunk_number": 4062,
+        "parent_id": "135f9a1c-4dd1-4c8a-b0d9-9e40dad48410"
+    },
+    {
+        "context": [
+            "1.   In the case of non-contractual liability, the Authority shall, in accordance with the general principles common to the laws of the Member States, make good any damage caused by it or by its staff in the performance of their duties. The Court of Justice of the European Union shall have jurisdiction in any dispute over the remedying of such damage. 2.   The personal financial liability and disciplinary liability of Authority staff towards the Authority shall be governed by the relevant provisions applying to the staff of the Authority."
+        ],
+        "question": "\"What are the principles common to the laws of Member States in non-contractual liability?\"",
+        "chunk_index": 47,
+        "question_id": "Q048",
+        "chunk_number": 4530,
+        "parent_id": "4e9d9de1-2cbf-492b-90c1-304516713360"
+    },
+    {
+        "context": [
+            "1.   In addition to the collateral established in Article 197, where an institution uses the Financial Collateral Comprehensive Method set out in Article 223, that institution may use the following items as eligible collateral: (a) equities or convertible bonds not included in a main index but traded on a recognised exchange; (b) units or shares in CIUs where both the following conditions are met: (i) the units or shares have a daily public price quote; (ii) the CIU is limited to investing in instruments that are eligible for recognition under Article 197(1) and (4) and the items mentioned in point (a) of this subparagraph. In the case a CIU invests in units or shares of another CIU, conditions (a) and (b) of this paragraph equally apply to any such underlying CIU. The use by a CIU of derivative instruments to hedge permitted investments shall not prevent units or shares in that undertaking from being eligible as collateral. 2.   Where the CIU or any underlying CIU are not limited to investing in instruments that are eligible for recognition under Article 197(1) and (4) and the items mentioned in point (a) of paragraph 1 of this Article, institutions may use units or shares in that CIU as collateral to an amount equal to the value of the eligible assets held by that CIU under the assumption that that CIU or any of its underlying CIUs have invested in non-eligible assets to the maximum extent allowed under their respective mandates. Where non-eligible assets can have a negative value due to liabilities or contingent liabilities resulting from ownership, institutions shall do both of the following: (a) calculate the total value of the non-eligible assets; (b) where the amount obtained under point (a) is negative, subtract the absolute value of that amount from the total value of the eligible assets."
+        ],
+        "question": "\"What are the conditions that a financial institution must meet if it chooses to use convertible bonds not included in a main index but traded on a recognised exchange as collateral? Please provide specifics.\" This question requires the student to understand and explain the conditions mentioned in the context related to the usage of convertible bonds as collateral by financial institutions.",
+        "chunk_index": 48,
+        "question_id": "Q049",
+        "chunk_number": 1910,
+        "parent_id": "8025d2eb-8d74-4ce7-908b-7cdfb4fafb23"
+    },
+    {
+        "context": [
+            "(90) It is important to ensure international convergence of requirements for CCPs and trade repositories. This Regulation follows the existing recommendations developed by the Committee on Payment and Settlement Systems (CPSS) and International Organization of Securities Commissions (IOSCO) noting that the CPSS-IOSCO principles for financial market infrastructure, including CCPs, were established on 16 April 2012. It creates a Union framework in which CCPs can operate safely. ESMA should consider these existing standards and their future developments when drawing up or proposing to revise the regulatory technical standards as well as the guidelines and recommendations foreseen in this Regulation."
+        ],
+        "question": "What principles from the Committee on Payment and Settlement Systems (CPSS) and International Organization of Securities Commissions (IOSCO) influence the development of financial market infrastructure, including Central Counterparty (CCP) and trade repository?",
+        "chunk_index": 49,
+        "question_id": "Q050",
+        "chunk_number": 2832,
+        "parent_id": "2ca3ec63-359d-4421-a5c3-a5b792cc6fea"
+    }
+]

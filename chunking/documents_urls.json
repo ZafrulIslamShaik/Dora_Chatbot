@@ -1,0 +1,164 @@
+{
+  "documents": [
+    {
+      "document_number": 1,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2554",
+      "document_name": "Regulation (EU) 2022/2554"
+    },
+    {
+      "document_number": 2,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555",
+      "document_name": "Directive (EU) 2022/2555"
+    },
+    {
+      "document_number": 27,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679",
+      "document_name": "Regulation (EU) 2016/679"
+    },
+    {
+      "document_number": 10,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32015L2366",
+      "document_name": "Directive (EU) 2015/2366"
+    },
+    {
+      "document_number": 8,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0575",
+      "document_name": "Regulation (EU) No 575/2013"
+    },
+    {
+      "document_number": 5,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0036",
+      "document_name": "Directive 2013/36/EU"
+    },
+    {
+      "document_number": 4,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0065",
+      "document_name": "Directive 2014/65/EU"
+    },
+    {
+      "document_number": 15,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014R0600",
+      "document_name": "Regulation (EU) No 600/2014"
+    },
+    {
+      "document_number": 9,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R2033",
+      "document_name": "Regulation (EU) 2019/2033"
+    },
+    {
+      "document_number": 31,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L2034",
+      "document_name": "Directive (EU) 2019/2034"
+    },
+    {
+      "document_number": 12,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32012R0648",
+      "document_name": "Regulation (EU) No 648/2012"
+    },
+    {
+      "document_number": 14,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011L0061",
+      "document_name": "Directive 2011/61/EU"
+    },
+    {
+      "document_number": 6,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0065",
+      "document_name": "Directive 2009/65/EC"
+    },
+    {
+      "document_number": 16,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0138",
+      "document_name": "Directive 2009/138/EC"
+    },
+    {
+      "document_number": 13,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014R0909",
+      "document_name": "Regulation (EU) No 909/2014"
+    },
+    {
+      "document_number": 17,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0097",
+      "document_name": "Directive (EU) 2016/97"
+    },
+    {
+      "document_number": 25,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L2341",
+      "document_name": "Directive (EU) 2016/2341"
+    },
+    {
+      "document_number": 19,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010R1093",
+      "document_name": "Regulation (EU) No 1093/2010"
+    },
+    {
+      "document_number": 20,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010R1094",
+      "document_name": "Regulation (EU) No 1094/2010"
+    },
+    {
+      "document_number": 21,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010R1095",
+      "document_name": "Regulation (EU) No 1095/2010"
+    },
+    {
+      "document_number": 32,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0059",
+      "document_name": "Directive 2014/59/EU"
+    },
+    {
+      "document_number": 3,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0034",
+      "document_name": "Directive 2013/34/EU"
+    },
+    {
+      "document_number": 24,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32018L1972",
+      "document_name": "Directive (EU) 2018/1972"
+    },
+    {
+      "document_number": 23,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2557",
+      "document_name": "Directive (EU) 2022/2557"
+    },
+    {
+      "document_number": 22,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L1148",
+      "document_name": "Directive (EU) 2016/1148"
+    },
+    {
+      "document_number": 26,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0881",
+      "document_name": "Regulation (EU) 2019/881"
+    },
+    {
+      "document_number": 28,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32020R1503",
+      "document_name": "Regulation (EU) 2020/1503"
+    },
+    {
+      "document_number": 29,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017R2402",
+      "document_name": "Regulation (EU) 2017/2402"
+    },
+    {
+      "document_number": 18,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017R1129",
+      "document_name": "Regulation (EU) 2017/1129"
+    },
+    {
+      "document_number": 11,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0110",
+      "document_name": "Directive 2009/110/EC"
+    },
+    {
+      "document_number": 30,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L1937",
+      "document_name": "Directive (EU) 2019/1937"
+    },
+    {
+      "document_number": 7,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R1011",
+      "document_name": "Regulation (EU) 2016/1011"
+    }
+  ]
+}

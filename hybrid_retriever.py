@@ -1,7 +1,7 @@
 """
 Hybrid Retrieval Module
 
-Input: split_documents.json, Qdrant vector database
+Input: Qdrant vector database (both dense and sparse)
 Output: Fused and reranked relevant documents
 
 """
@@ -16,8 +16,8 @@ from llama_index.retrievers.bm25 import BM25Retriever
 from llama_index.core.retrievers import QueryFusionRetriever
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
-from embedding_generator import get_azure_embedding
-from config import *
+from document_embeddings.embedding_generator import get_azure_embedding
+from EVALUATION.config import *
 
 # === Configuration ===
 QDRANT_HOST = "localhost"
@@ -43,18 +43,32 @@ class HybridRetriever:
 
         logging.info(f"Initializing HybridRetriever (alpha={alpha}, top_k={top_k})")
 
-        # Load and prepare document chunks for BM25 indexing
-        with open(TEXTS_FILE, "r", encoding="utf-8") as f:
-            chunks = json.load(f)
-
+        # Connect to Qdrant (used for both sparse and dense)
+        qdrant_client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
+        
+        # Load documents from Qdrant collection for BM25 indexing
+        all_points = qdrant_client.scroll(
+            collection_name=COLLECTION_NAME,
+            limit=10000,
+            with_payload=True
+        )[0]
+        
+        print(f"Loaded {len(all_points)} documents from Qdrant for BM25")
+        
+        # Build TextNodes from Qdrant data
         self.nodes = []
-        for i, chunk in enumerate(chunks):
-            text = chunk.get("text", "")
-            if isinstance(text, list):
-                text = text[0] if text else ""
-            metadata = chunk.get("metadata", {})
-            self.nodes.append(TextNode(text=text, metadata=metadata, id_=f"node_{i}"))
-        logging.info(f"Loaded {len(self.nodes)} TextNodes for BM25")
+        for point in all_points:
+            text_content = point.payload.get("text", "")
+            
+            if isinstance(text_content, list):
+                text_content = text_content[0] if text_content else ""
+            
+            metadata = {k: v for k, v in point.payload.items() if k != "text"}
+            metadata["qdrant_id"] = point.id
+            
+            self.nodes.append(TextNode(text=text_content, metadata=metadata))
+        
+        logging.info(f"Loaded {len(self.nodes)} TextNodes for BM25 from Qdrant")
 
         # Initialize BM25 sparse retriever
         self.sparse_retriever = BM25Retriever.from_defaults(
@@ -67,7 +81,6 @@ class HybridRetriever:
         Settings.llm = None 
 
         # Initialize Qdrant vector store for dense retrieval
-        qdrant_client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
         vector_store = QdrantVectorStore(client=qdrant_client, collection_name=COLLECTION_NAME)
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
@@ -125,7 +138,3 @@ class AzureEmbedding(BaseEmbedding):
     async def _aget_text_embedding(self, text: str) -> List[float]:
         """Asynchronous text embedding generation."""
         return self._get_text_embedding(text)
-
-
-
-

@@ -14,7 +14,7 @@ Processes question-context pairs in batches and measures retrieval performance.
 import json
 import logging
 import os
-from config import *
+from Models.DORA_CHATBOT.EVALUATION.config import *
 from datetime import datetime
 from generator import get_azure_llm
 from hyde import get_dora_hyde_answer
@@ -42,7 +42,7 @@ def get_retrieval_results_filename(batch_num, k_value, prompt_type='default'):
     timestamp = datetime.now().strftime("%H-%M-%S_%d-%m")
     results_dir = os.path.join(cwd, OUTPUT_FOLDER)
     os.makedirs(results_dir, exist_ok=True)
-    return os.path.join(results_dir, f"ret_results_batch_{batch_num}_k{k_value}.json")
+    return os.path.join(results_dir, f"ret_results.json")
 
 def initialize_retriever_with_chunks(chunks, k, use_gpu=True, llm=None):
     VECTOR_EMBEDDINGS_FOLDER = "document_embeddings"

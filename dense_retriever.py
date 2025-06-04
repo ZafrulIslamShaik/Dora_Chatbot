@@ -2,21 +2,21 @@
 """
 Dense Retriever Module
 
-Implements vector-based dense retrieval using Qdrant vector database and Azure embeddings.
+Implements vector-based dense retrieval using Qdrant vector database.
 Supports HyDE (Hypothetical Document Embeddings) for enhanced query understanding.
 
-Uses: Qdrant vector database, Azure OpenAI embeddings
-Input: Qdrant collection only
+Uses: Qdrant vector database
+
 """
 
 from typing import List
 import numpy as np
 from qdrant_client import QdrantClient
-from embedding_generator import get_azure_embedding
+from document_embeddings.embedding_generator import get_azure_embedding
 from hyde import get_dora_hyde_answer
 from retriever_base import BaseRetriever
 from datetime import datetime
-from config import *
+from EVALUATION.config import *
 from llama_index.core.schema import Document
 
 class DenseRetriever(BaseRetriever):
