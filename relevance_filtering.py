@@ -10,7 +10,7 @@ import logging
 import re
 from datetime import datetime
 from generator import get_azure_llm  
-from config import *
+from EVALUATION.config import *
 
 
 def filter_documents_by_llm(retriever, question, retrieved_docs):
