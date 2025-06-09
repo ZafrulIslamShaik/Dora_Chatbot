@@ -1,3 +1,5 @@
 .env.local
-document_embeddings/split_documents.npy
+document_embeddings/small_embeddings.npy
+document_embeddings/large_embeddings.npy
+document_embeddings/cross_references.npy
 
