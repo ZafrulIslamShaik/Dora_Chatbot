@@ -69,9 +69,9 @@ if 'last_answer' not in st.session_state:
     st.session_state.last_answer = ""
 if 'pending_enhancement' not in st.session_state:
     st.session_state.pending_enhancement = None
-if 'show_enhanced' not in st.session_state:
-    st.session_state.show_enhanced = {}
 
+
+### Answer Prompt
 def create_answer_prompt(question, context_chunks):
     """Create prompt for answer generation with citation format"""
     formatted_chunks = ""
@@ -166,49 +166,100 @@ def detect_poor_quality_answer(answer):
 
 def enhance_with_cross_references(retrieved_docs, question):
     """
-    Enhance retrieved documents with cross-reference legal documents.
-    NEW IMPLEMENTATION: Reference-first approach with cosine similarity ranking
+    Enhance retrieved documents with relevant cross-reference legal documents.
+    
+    Extracts parent IDs from retrieved docs, finds related legal references,
+    and adds top 3 semantically similar cross-references (similarity > 0.3).
     
     Args:
-        retrieved_docs: List of documents from main retrieval
-        question: User question for semantic search
+        retrieved_docs: Initial documents from main retrieval
+        question: User question for similarity scoring
         
     Returns:
-        Enhanced list with original docs + top 5 cross-reference docs
+        List of original docs + up to 3 cross-reference docs, or original docs if enhancement fails
+    
     """
     print(f"\n" + "="*60)
     print("CROSS-REFERENCE ENHANCEMENT")
     print("="*60)
     
     try:
-        # Connect to Qdrant cross-references collection
+        # Connect to Qdrant
         qdrant_client = QdrantClient(host="localhost", port=6333)
         
-        # Extract all references from retrieved documents
-        all_references = []
+        # Load reference identifiers from JSON file
+        print("Loading reference identifiers from file...")
+
+     
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        json_file_path = os.path.join(script_dir, "reference_identifiers.json")
+
+        try:
+            with open(json_file_path, "r", encoding="utf-8") as f:
+                reference_data = json.load(f)
+            print(f" Successfully loaded reference_identifiers.json")
+        except FileNotFoundError:
+            print(" reference_identifiers.json file not found")
+            print(f"Current working directory: {os.getcwd()}")
+            print(f"Script directory: {script_dir}")
+            print("="*30)
+            return retrieved_docs
+        
+        # Extract parent IDs from retrieved documents
+        parent_ids = []  
         print(f"Input: {len(retrieved_docs)} cited chunks")
-        print("Extracting references from cited chunks:")
+        print("Extracting parent IDs from cited chunks:")
         
         for i, doc in enumerate(retrieved_docs):
-            references = doc.metadata.get("references", [])
-            if isinstance(references, list) and references:
-                print(f"  chunk{i+1}: {len(references)} references found")
-                for ref in references:
-                    if isinstance(ref, dict):
-                        doc_name = ref.get("document", "")
-                        article = ref.get("article_number", [])
-                        paragraph = ref.get("Paragraph", [])
-                        print(f"    - {doc_name}, Article: {article}, Paragraph: {paragraph}")
-                all_references.extend(references)
+            parent_id = doc.metadata.get("parent_id", "")
+            if parent_id and parent_id not in parent_ids:  # Avoid duplicates
+                parent_ids.append(parent_id) 
+                print(f"  chunk{i+1}: parent_id = {parent_id}")
+            elif parent_id:
+                print(f"  chunk{i+1}: parent_id = {parent_id} (already processed)")
             else:
-                print(f"  chunk{i+1}: no references")
+                print(f"  chunk{i+1}: no parent_id found")
         
-        if not all_references:
-            print("❌ No references found in cited chunks")
+        if not parent_ids: 
+            print("No parent IDs found in cited chunks")
             print("="*60)
             return retrieved_docs
         
-        print(f"Total references to search: {len(all_references)}")
+        # Collect all references for the parent IDs
+        all_references = []
+        print(f"\nLooking up references for {len(parent_ids)} unique parent IDs:")  
+        
+        for parent_id in parent_ids:  # search using parent id
+            print(f"\nSearching references for parent_id: {parent_id}")
+            found_entry = False
+            
+            for entry in reference_data:
+                if entry.get("parent_id") == parent_id:
+                    references = entry.get("references", [])
+                    if isinstance(references, list) and references:
+                        print(f"  Found {len(references)} references")
+                        for ref in references:
+                            if isinstance(ref, dict):
+                                doc_name = ref.get("document", "")
+                                article = ref.get("article_number", [])
+                                paragraph = ref.get("Paragraph", [])
+                                print(f"    - {doc_name}, Article: {article}, Paragraph: {paragraph}")
+                        all_references.extend(references)
+                        found_entry = True
+                    else:
+                        print(f"  No references found for this parent_id")
+                        found_entry = True
+                    break
+            
+            if not found_entry:
+                print(f"  Parent ID not found in reference_identifiers.json")
+        
+        if not all_references:
+            print("❌ No references found for any parent IDs")
+            print("="*60)
+            return retrieved_docs
+        
+        print(f"\nTotal references to search: {len(all_references)}")
         print("-"*60)
         
         # Generate query embedding for similarity calculation
@@ -269,7 +320,7 @@ def enhance_with_cross_references(retrieved_docs, question):
                                     }
                                 )
                                 matched_docs.append(cross_ref_doc)
-                                print(f"    ✅ Found exact match! Similarity: {similarity:.3f}")
+                                print(f"Found exact match! Similarity: {similarity:.3f}")
                                 found_match = True
                                 break
                     if found_match:
@@ -302,34 +353,7 @@ def enhance_with_cross_references(retrieved_docs, question):
                             print(f"    ✅ Found article match! Similarity: {similarity:.3f}")
                             found_match = True
                             break
-                if found_match:
-                    break
-            
-            # Priority 3: Try document fallback
-            if not found_match:
-                target_ref = f"Document: {document}"
-                print(f"  Trying document fallback: {target_ref}")
-                
-                for point in all_cross_refs:
-                    stored_ref = point.payload.get("reference", "")
-                    if document in stored_ref:
-                        # Calculate cosine similarity
-                        doc_vector = point.vector
-                        similarity = calculate_cosine_similarity(query_embedding, doc_vector)
-                        
-                        cross_ref_doc = Document(
-                            text=point.payload.get("text", ""),
-                            metadata={
-                                **point.payload,
-                                "document_type": "cross_reference",
-                                "match_type": "document",
-                                "similarity_score": similarity,
-                                "reference_match": target_ref
-                            }
-                        )
-                        matched_docs.append(cross_ref_doc)
-                        print(f"Found document match! Similarity: {similarity:.3f}")
-                        found_match = True
+                    if found_match:
                         break
             
             if not found_match:
@@ -338,13 +362,27 @@ def enhance_with_cross_references(retrieved_docs, question):
         print(f"\nTotal matched documents: {len(matched_docs)}")
         print("-"*60)
         
+        # Apply similarity threshold filter (> 0.3)
+        print("Applying similarity threshold filter (> 0.3)...")
+        filtered_docs = []
+        for doc in matched_docs:
+            similarity = doc.metadata["similarity_score"]
+            if similarity > 0.3:
+                filtered_docs.append(doc)
+                print(f"  ✅ Kept: Similarity {similarity:.3f}")
+            else:
+                print(f"  ❌ Filtered out: Similarity {similarity:.3f} (below threshold)")
+        
+        print(f"After threshold filtering: {len(filtered_docs)} documents remain")
+        print("-"*60)
+        
         # Sort by similarity score (highest first)
-        matched_docs.sort(key=lambda x: x.metadata["similarity_score"], reverse=True)
+        filtered_docs.sort(key=lambda x: x.metadata["similarity_score"], reverse=True)
         
-        # Take top 5 cross-reference documents
-        top_cross_refs = matched_docs[:5]
+        # Take top 3 cross-reference documents
+        top_cross_refs = filtered_docs[:3]
         
-        print("Top 5 cross-references selected:")
+        print("Top 3 cross-references selected:")
         for i, doc in enumerate(top_cross_refs):
             similarity = doc.metadata["similarity_score"]
             match_type = doc.metadata["match_type"]
@@ -380,7 +418,6 @@ def extract_chunk_numbers_from_answer(answer):
     
     return []
 
-
 def display_chunks():
     """Display retrieved chunks with metadata, showing full text"""
     if not st.session_state.retrieved_chunks:
@@ -415,7 +452,6 @@ def display_chunks():
             
             if is_target:
                 st.markdown('</div>', unsafe_allow_html=True)
-
 
 def run_single_retrieval(question, retriever_type, k, alpha, use_hyde, use_llm_filtering, llm):
     """Run a single retrieval attempt - NO enhanced answer here"""
@@ -486,7 +522,6 @@ def run_single_retrieval(question, retriever_type, k, alpha, use_hyde, use_llm_f
     
     return answer, retrieved_docs, retriever
 
-
 def generate_enhanced_answer(question, initial_answer, filtered_docs):
     """Generate enhanced answer using only cited chunks and their cross-references"""
     print("\n" + "🔥"*20)
@@ -516,9 +551,15 @@ def generate_enhanced_answer(question, initial_answer, filtered_docs):
         print("No valid cited chunks found")
         return None
     
+
     # Get cross-references based on ONLY the cited chunks
     enhanced_docs = enhance_with_cross_references(cited_chunks, question)
-    
+
+    # Check if any cross-references were actually added
+    if len(enhanced_docs) == len(cited_chunks):
+        print("❌ No cross-references found - skipping enhanced answer generation")
+        return None
+
     # Update session state with the enhanced chunks
     st.session_state.retrieved_chunks = enhanced_docs
     
@@ -579,7 +620,7 @@ RELATED LEGAL CROSS-REFERENCES:
 
 1. Answer the following QUESTION only using the provided CONTEXT.
 2. You are not allowed to add any points that are not present in the context.
-3. If there are any contradictions, reply with "I don’t know"
+3. If there are any contradictions, reply with "I don't know"
 
 
 YOUR RESPONSE:"""
@@ -730,45 +771,80 @@ def main():
         with st.chat_message("user"):
             st.write(message["question"])
         with st.chat_message("assistant"):
-            # Check if we should show enhanced answer
-            if st.session_state.show_enhanced.get(i, False) and 'enhanced_answer' in message:
-                # Show enhanced answer
-                st.info("🔥 **Enhanced Answer with Cross-References:**")
+            # ALWAYS show the initial answer first
+            st.markdown("### 📋 **Initial Answer:**")
+            display_answer_with_links(message["answer"], i)
+            
+
+            # If enhanced answer exists, show it below the initial answer
+            if 'enhanced_answer' in message:
+                st.markdown("---")  # Separator line
+                st.markdown("### 🔥 **Enhanced Answer with Cross-References:**")
                 display_answer_with_links(message["enhanced_answer"], f"enhanced_{i}")
-            else:
-                # Show initial answer
-                display_answer_with_links(message["answer"], i)
                 
-                # Show enhance button if this is the most recent message and no enhanced answer yet
-                if i == len(st.session_state.chat_history) - 1 and 'enhanced_answer' not in message:
-                    col1, col2, col3 = st.columns([1, 2, 1])
-                    with col2:
-                        if st.button("🔥 Get Enhanced Answer with Cross-References", 
-                                   key=f"enhance_btn_{i}",
-                                   help="Generate a more comprehensive answer using cross-referenced legal documents"):
+                # Show the chunks used for enhanced answer
+                st.markdown("---")
+                st.markdown("### 📊 **Chunks Used for Enhanced Answer:**")
+                
+                if st.session_state.retrieved_chunks:
+                    # Separate original chunks from cross-references
+                    original_chunks = []
+                    cross_ref_chunks = []
+                    
+                    for idx, chunk in enumerate(st.session_state.retrieved_chunks):
+                        if chunk.metadata.get("document_type") == "cross_reference":
+                            cross_ref_chunks.append((idx + 1, chunk))
+                        else:
+                            original_chunks.append((idx + 1, chunk))
+                    
+                    # Display original chunks
+                    if original_chunks:
+                        st.markdown("**📋 Original Cited Chunks:**")
+                        for chunk_num, chunk in original_chunks:
+                            with st.expander(f"Chunk {chunk_num} (Original)", expanded=False):
+                                text = chunk.text if hasattr(chunk, 'text') else chunk.page_content
+                                st.markdown(f"**Text:** {text}")
+                                st.markdown(f"**Parent ID:** {chunk.metadata.get('parent_id', 'N/A')}")
+                    
+                    # Display cross-reference chunks
+                    if cross_ref_chunks:
+                        st.markdown("**🔗 Cross-Reference Chunks Added:**")
+                        for chunk_num, chunk in cross_ref_chunks:
+                            with st.expander(f"Chunk {chunk_num} (Cross-Reference)", expanded=False):
+                                text = chunk.text if hasattr(chunk, 'text') else chunk.page_content
+                                st.markdown(f"**Text:** {text}")
+                                st.markdown(f"**Reference:** {chunk.metadata.get('reference', 'N/A')}")
+                                st.markdown(f"**Match Type:** {chunk.metadata.get('match_type', 'N/A')}")
+                                st.markdown(f"**Similarity Score:** {chunk.metadata.get('similarity_score', 'N/A'):.3f}")
+                    
+                    st.markdown(f"**Total chunks sent to LLM:** {len(original_chunks)} original + {len(cross_ref_chunks)} cross-references = {len(st.session_state.retrieved_chunks)} chunks")
+                else:
+                    st.info("No chunks available to display.")
                             
-                            # Generate enhanced answer
-                            if st.session_state.pending_enhancement:
-                                with st.spinner("Generating enhanced answer..."):
-                                    enhanced_answer = generate_enhanced_answer(
-                                        st.session_state.pending_enhancement['question'],
-                                        st.session_state.pending_enhancement['initial_answer'],
-                                        st.session_state.pending_enhancement['filtered_docs']
-                                    )
-                                    
-                                    if enhanced_answer:
-                                        # Update the message with enhanced answer
-                                        st.session_state.chat_history[i]['enhanced_answer'] = enhanced_answer
-                                        st.session_state.show_enhanced[i] = True
-                                        st.rerun()
-                                    else:
-                                        st.error("Could not generate enhanced answer. No citations found in the initial answer.")
-                
-                # Show toggle button if enhanced answer exists
-                elif 'enhanced_answer' in message:
-                    if st.button("📋 Show Initial Answer", key=f"show_initial_{i}"):
-                        st.session_state.show_enhanced[i] = False
-                        st.rerun()
+
+            # Show enhance button if this is the most recent message and no enhanced answer yet
+            if i == len(st.session_state.chat_history) - 1 and 'enhanced_answer' not in message:
+                col1, col2, col3 = st.columns([1, 2, 1])
+                with col2:
+                    if st.button("🔥 Get Enhanced Answer with Cross-References", 
+                               key=f"enhance_btn_{i}",
+                               help="Generate a more comprehensive answer using cross-referenced legal documents"):
+                        
+                        # Generate enhanced answer
+                        if st.session_state.pending_enhancement:
+                            with st.spinner("Generating enhanced answer..."):
+                                enhanced_answer = generate_enhanced_answer(
+                                    st.session_state.pending_enhancement['question'],
+                                    st.session_state.pending_enhancement['initial_answer'],
+                                    st.session_state.pending_enhancement['filtered_docs']
+                                )
+                                
+                                if enhanced_answer:
+                                    # Update the message with enhanced answer (but don't hide initial)
+                                    st.session_state.chat_history[i]['enhanced_answer'] = enhanced_answer
+                                    st.rerun()
+                                else:
+                                    st.error("Could not generate enhanced answer. No citations found in the initial answer.")
     
     # Show retrieved chunks if enabled
     if display_retrieved_chunks:
@@ -799,6 +875,7 @@ def main():
                 )
                 
                 # Display the answer with clickable source links
+                st.markdown("### 📋 **Initial Answer:**")
                 display_answer_with_links(result["answer"], len(st.session_state.chat_history))
                 
                 col1, col2, col3 = st.columns([1, 2, 1])

@@ -145,8 +145,8 @@ QDRANT_PORT = 6333
 
 # Main DORA collection configuration
 DORA_COLLECTION_NAME = "dora_embeddings"
-DORA_EMBEDDING_FILE = "document_embeddings/split_documents.npy"
-DORA_CHUNKS_FILE = "document_embeddings/split_documents.json"
+DORA_EMBEDDING_FILE = "document_embeddings/small.npy"
+DORA_CHUNKS_FILE = "document_embeddings/small.json"
 
 # Cross-references collection configuration
 CROSS_REF_COLLECTION_NAME = "cross_references"
