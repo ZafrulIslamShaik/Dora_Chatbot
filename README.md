@@ -99,14 +99,9 @@ Both can be loaded using Qdrant.
 
 3. **Load to database**: Run `python qdrant.py` to load embeddings into the vector database
 
-4. **Start chatbot**: Run `streamlit enhanced_app.py` to launch the interface
+4. **Start chatbot**: Run `streamlit run enhanced_app.py` to launch the interface
 
 
-### 5. Load Embeddings to Qdrant
-```bash
-python qdrant.py
-```
-*This will load the document embeddings into the vector database*
 
 ### 6. Run the Chatbot
 ```bash
@@ -127,23 +122,7 @@ Open your browser and go to: `http://localhost:8501`
 - **Hybrid Retriever**: Combines dense and sparse methods
 - **HyDE Retriever**: Enhanced queries with hypothetical documents
 - **Show Chunks**: Display source documents used
-- And many more configuration options available
 
-## Troubleshooting
-
-**Azure API errors:**
-- Check your API keys in `.env.local`
-- Verify your Azure subscription has OpenAI access
-- Check API rate limits
-
-**App not loading:**
-```bash
-# Check if all dependencies installed
-pip install -r requirements.txt
-
-# Restart Qdrant
-docker-compose restart
-```
 
 ## File Structure
 DORA_CHATBOT/
