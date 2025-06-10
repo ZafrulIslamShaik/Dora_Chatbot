@@ -153,27 +153,28 @@ Open your browser and go to: `http://localhost:8501`
 
 
 ## File Structure
+
 DORA_CHATBOT/
-├── enhanced_app.py           # Main chatbot interface
-├── dense_retriever.py    
-├── sparse_retriever.py      
-├── hybrid_retriever.py     
-├── hyde.py
-├── relevance_filtering.py   
-├── generator.py           
-├── reference_identifiers.json 
-├── requirements.txt        
-├── docker-compose.yml          
-├── qdrant.py                            
-└── document_embeddings/
-   ├── embedding_generator.py
-   ├── large_embeddings.npy 
-   ├── small_embeddings.npy  
-   ├── large_documents.json  
-   ├── small_documents.json  
-   ├── cross_references.json  
-   ├── cross_references.npy 
-   └── .env.local 
+- app.py
+- dense_retriever.py  
+- sparse_retriever.py
+- hybrid_retriever.py
+- hyde.py
+- relevance_filtering.py
+- generator.py
+- reference_identifiers.json
+- requirements.txt
+- docker-compose.yml
+- qdrant.py
+- document_embeddings/
+  - embedding_generator.py
+  - large_embeddings.npy
+  - small_embeddings.npy
+  - large_documents.json
+  - small_documents.json
+  - cross_references.json
+  - cross_references.npy
+  - .env.local
 
 
 ## Cost Information
