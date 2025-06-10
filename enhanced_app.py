@@ -699,25 +699,19 @@ def display_answer_with_links(answer, message_index):
     # Extract all chunk numbers mentioned in the answer
     chunk_numbers = extract_chunk_numbers_from_answer(answer)
     
-    # Split answer into parts before and after the "CHUNKS USED:" section
     parts = answer.split("**CHUNKS USED:**")
     if len(parts) != 2:
         # If not found, just display the answer as is
         st.write(answer)
         return
     
-    # Display the main answer part
     st.write(parts[0])
     
-    # Display the "CHUNKS USED:" header with enhanced styling
     st.markdown("**📚 SOURCES USED:**", unsafe_allow_html=True)
     
-    # Create numbered source buttons with enhanced styling
     for i, chunk_num in enumerate(chunk_numbers):
-        # Create a unique key for each button
         button_key = f"link_chunk_{chunk_num}_{i}_{message_index}"
-        
-        # Show "Source N" button with enhanced styling
+
         if st.button(f"📄 Source {chunk_num}", key=button_key, 
                     help=f"Click to view source chunk {chunk_num}",
                     type="primary"):
@@ -737,20 +731,16 @@ def main():
         ["Dense_Retriever", "Sparse_Retriever", "Hybrid_Retriever", "HyDE_Retriever"], index=2
     )
     
-    # Dynamic K parameter label based on retriever type
     k_label = f"{retriever_type.split('_')[0]} K"
     k = st.sidebar.slider(k_label, min_value=1, max_value=50, value=10)
     
     # Alpha for Hybrid retriever
     alpha = 0.7
     
-    # HyDE is automatically used with HyDE_Retriever
     use_hyde = retriever_type == "HyDE_Retriever"
-    
-    # Toggle buttons for filtering options (default OFF)
     st.sidebar.subheader("Enhancement Options")
     
-    # Use radio buttons as toggle switches with default OFF
+    # Use radio buttons as toggle switches with default ON
     llm_filtering = st.sidebar.radio(
         "LLM Relevancy Filtering",
         options=["Off", "On"],
@@ -890,8 +880,7 @@ def main():
             "question": question,
             "answer": result["answer"]
         })
-        
-        # Show retrieved chunks after generation if enabled
+
         if display_retrieved_chunks:
             st.subheader("Retrieved Chunks")
             display_chunks()
