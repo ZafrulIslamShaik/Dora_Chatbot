@@ -734,7 +734,7 @@ def main():
     # Retriever selection
     retriever_type = st.sidebar.radio(
         "Select Retriever",
-        ["Dense_Retriever", "Sparse_Retriever", "Hybrid_Retriever", "HyDE_Retriever"]
+        ["Dense_Retriever", "Sparse_Retriever", "Hybrid_Retriever", "HyDE_Retriever"], index=2
     )
     
     # Dynamic K parameter label based on retriever type
@@ -754,7 +754,7 @@ def main():
     llm_filtering = st.sidebar.radio(
         "LLM Relevancy Filtering",
         options=["Off", "On"],
-        index=0  
+        index=1
     )
     use_llm_filtering = llm_filtering == "On"
     

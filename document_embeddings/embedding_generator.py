@@ -3,8 +3,6 @@ Embedding Generation Module
 
 Generates vector embeddings for document chunks using Azure OpenAI embedding models.
 
-Input: split_documents.json (chunked documents)
-Output: embeddings.npy file
 """
 
 import os
@@ -16,7 +14,7 @@ import time
 
 
 
-CHUNKS_FILE= "split_documents.json"
+CHUNKS_FILE= "large_documents.json"
 dotenv.load_dotenv(".env.local")
 
 # Configuration for embedding storage

@@ -79,7 +79,7 @@ for doc in documents:
         new_documents.append(doc_copy)
         chunk_counter += 1  
 
-output_file = "split_documents.json"
+output_file = "large_documents.json"
 with open(output_file, "w", encoding="utf-8") as file:
     json.dump(new_documents, file, indent=2, ensure_ascii=False)
 
